@@ -12,8 +12,7 @@ class StonePS extends Component {
   constructor(props) {
     super(props);
 
-    this.result = {text: 'gfs'};
-
+    this.state = {text: '', value: ''};
     this.game = this.game.bind(this);
   }
 
@@ -21,13 +20,13 @@ class StonePS extends Component {
     random = (Math.round(Math.random() * 2));
     console.log(gesture[random]);
     if (random === num) {
-      return {text: 'draw'};
+      this.setState(() => ({text: "It's a draw", value: gesture[random]}));
     } else if (random === 2 && num === 0) {
-      return console.log("win");
+      this.setState(() => ({text: 'You win!', value: gesture[random]}));
     } else if (random > num || (random === 0 && num === 2)) {
-      return console.log("loose");
+      this.setState(() => ({text: 'You loose', value: gesture[random]}));
     } else {
-      return console.log("win");
+      this.setState(() => ({text: 'You win!', value: gesture[random]}));
     }
   }
 
@@ -43,7 +42,10 @@ class StonePS extends Component {
         <button onClick={() => this.game(2)}>
           <img src={stone} alt="Stone" /> Stone
         </button>
-        <div>wynik: {this.result.text}</div>
+        <div className="gameInfo">
+          <div className="oponent"> Oponent played: {this.state.value} </div>
+          <div className="result">Result: {this.state.text} </div>
+        </div>
       </div>
     );
   }
