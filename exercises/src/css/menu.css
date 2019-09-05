@@ -1,16 +1,23 @@
-.menu{
+.menuBar{
   width: 100%;
-  background-color: rgb(187, 178, 167);
+  height: 100px;
 }
 
-.menu-item {
+/* .menu h4 {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+} */
+
+.play-btn {
+  text-align: center;
+  padding: 2px;
+  float: right;
   box-sizing: border-box;
   width: 25%;
-  float: left;
-  display: inline-block;
+  height: 70px;
 }
 
-.menu h4 {
-  color: hotpink;
-  text-decoration: none;
+.play-btn:hover {
+  background-color: #4CAF50;
+  color: white;
 }

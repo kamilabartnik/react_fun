@@ -35,19 +35,21 @@ class StonePS extends Component {
 
   render() {
     return (
-      <div className="choose" id="#stone">
-        <button onClick={() => this.game(0)}>
-          <img src={paper} alt="Paper" />
-        </button>
-        <button onClick={() => this.game(1)}>
-          <img src={scissors} alt="Scissors" /> 
-        </button>
-        <button onClick={() => this.game(2)}>
-          <img src={stone} alt="Stone" /> 
-        </button>
-        <div className="gameInfo">
-          <div className="oponent"> Oponent played: {this.state.value} </div>
-          <div className="result">Result: {this.state.text} </div>
+      <div className="stoneDiv">
+        <div className="choose" id="#stone">
+          <button onClick={() => this.game(0)}>
+            <img src={paper} alt="Paper" />
+          </button>
+          <button onClick={() => this.game(1)}>
+            <img src={scissors} alt="Scissors" />
+          </button>
+          <button onClick={() => this.game(2)}>
+            <img src={stone} alt="Stone" />
+          </button>
+          <div className="gameInfo">
+            <div className="oponent"> Oponent played: {this.state.value} </div>
+            <div className="result">Result: {this.state.text} </div>
+          </div>
         </div>
         <button className="reset" onClick={() => this.reset()}>Reset</button>
       </div>

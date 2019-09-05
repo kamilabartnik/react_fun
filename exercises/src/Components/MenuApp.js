@@ -16,22 +16,12 @@ class MenuApp extends Component {
   
   render() {
     return (
-      <div>
-        <div>
-          <section className="bg-light page-section" id="portfolio">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12 text-center">
-                </div>
-              </div>
-              <div className="row">
-                {menus.map((item, index) => {
-                  return <MenuItem {...item} key={index} />
-                })}
-              </div>
-            </div>
-          </section>
-        </div>
+      <div className="menuBar">
+        <section className="bg-light page-section" id="portfolio">
+          {menus.map((item, index) => {
+            return <MenuItem {...item} key={index} />
+          })}
+        </section>
       </div>
     )
   }
