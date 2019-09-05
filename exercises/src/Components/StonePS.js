@@ -30,6 +30,10 @@ class StonePS extends Component {
     }
   }
 
+  reset(){
+    this.setState(() => ({text: '', value: ''}))
+  }
+
   render() {
     return (
       <div className="choose">
@@ -46,6 +50,7 @@ class StonePS extends Component {
           <div className="oponent"> Oponent played: {this.state.value} </div>
           <div className="result">Result: {this.state.text} </div>
         </div>
+        <button className="reset" onClick={() => this.reset()}>Reset</button>
       </div>
     );
   }
