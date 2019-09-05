@@ -18,7 +18,6 @@ class StonePS extends Component {
 
   game(num) {
     random = (Math.round(Math.random() * 2));
-    console.log(gesture[random]);
     if (random === num) {
       this.setState(() => ({text: "It's a draw", value: gesture[random]}));
     } else if (random === 2 && num === 0) {
@@ -38,13 +37,13 @@ class StonePS extends Component {
     return (
       <div className="choose">
         <button onClick={() => this.game(0)}>
-          <img src={paper} alt="Paper" /> Paper
+          <img src={paper} alt="Paper" />
         </button>
         <button onClick={() => this.game(1)}>
-          <img src={scissors} alt="Scissors" /> Scissors
+          <img src={scissors} alt="Scissors" /> 
         </button>
         <button onClick={() => this.game(2)}>
-          <img src={stone} alt="Stone" /> Stone
+          <img src={stone} alt="Stone" /> 
         </button>
         <div className="gameInfo">
           <div className="oponent"> Oponent played: {this.state.value} </div>
