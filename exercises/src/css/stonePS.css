@@ -1,16 +1,9 @@
-body {
-  background-color: #efefef;
-  color: rgb(105, 105, 105);
-  padding: 60px;
-  font-family: Arial;
-  text-align: center;
-}
-div.choose {
+.choose div {
   text-align: center;
   padding: 10px 20px;
 }
 
-button {
+.choose button {
   padding: 0px;
   margin: 10px;
   width: 30%;
@@ -18,21 +11,21 @@ button {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-button:hover {
+.choose button:hover {
   border-radius: 50%;
 }
 
-img {
+.choose img {
   width: 100%;
 }
 
-img:hover {
+.choose img:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   border-radius: 50%;
 }
 
-div.gameInfo{
+.choose div.gameInfo{
   background: white;
   padding: 20px;
   text-transform: uppercase;
@@ -56,4 +49,3 @@ div.gameInfo{
   color: white;
 
 }
-

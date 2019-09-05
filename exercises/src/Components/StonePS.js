@@ -35,7 +35,7 @@ class StonePS extends Component {
 
   render() {
     return (
-      <div className="choose">
+      <div className="choose" id="#stone">
         <button onClick={() => this.game(0)}>
           <img src={paper} alt="Paper" />
         </button>

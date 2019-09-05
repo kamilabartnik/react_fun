@@ -1,0 +1,16 @@
+.menu{
+  width: 100%;
+  background-color: rgb(187, 178, 167);
+}
+
+.menu-item {
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  display: inline-block;
+}
+
+.menu h4 {
+  color: hotpink;
+  text-decoration: none;
+}
