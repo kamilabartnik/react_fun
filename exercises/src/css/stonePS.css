@@ -1,0 +1,30 @@
+body {
+  background-color: #efefef;
+  color: rgb(105, 105, 105);
+  padding: 60px;
+  font-family: Arial;
+  text-align: center;
+}
+div.choose {
+  text-align: center;
+  padding: 10px 20px;
+}
+button {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius: 50%;
+}
