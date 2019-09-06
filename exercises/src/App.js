@@ -10,6 +10,7 @@ import Name from './Components/name';
 import Losowarka from './Components/losowarka';
 import StonePS from './Components/StonePS';
 import MenuApp from './Components/MenuApp';
+import FileSelector from './Components/FileSelector';
 
 
 function App() {
@@ -42,6 +43,13 @@ function App() {
           render={() => {
             return (
               <Table />)
+          }}
+        />
+        <Route
+          path='/FileSelector'
+          render={() => {
+            return (
+              <FileSelector />)
           }}
         />
       </Router>
