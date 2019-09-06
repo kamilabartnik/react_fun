@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import $ from "jquery";
 
-/* global $ */
-const $ = window.$;
+// need jquery
+
 class FileSelector extends Component {
 
   render() {
