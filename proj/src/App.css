@@ -3,6 +3,23 @@
   text-align: center;
   width: 900px;
   color: #4CAF50;
+  min-height: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.MenuBar{
+  margin-top: 10px;
+}
+
+.Pages {
+  margin-top: 150px;
+}
+
+.Light {
+  background:  rgb(16, 37, 17);
+  min-height: 900px;
+  width: 100%;
 }
 
 button {
@@ -16,6 +33,12 @@ button {
   letter-spacing: 3px;
   text-transform: uppercase;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.082), 0 3px 10px 0 rgba(0, 0, 0, 0.062);
+}
+
+div.ciemno {
+  position: fixed;
+  right:    10px;
+  bottom:   2px;
 }
 
 /* .App-logo {

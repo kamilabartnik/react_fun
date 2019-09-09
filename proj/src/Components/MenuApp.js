@@ -6,10 +6,11 @@ import img from '../assets/img/stone.jpg';
 
 const menus = [
   {title: 'Play Stone Paper Scissors', image: img, href:'/StonePaperScissors'},
-  {title: 'Get random number', image: img, href:'/RandomNumber'},
+  {title: 'Get random name', image: img, href:'/RandomNumber'},
   {title: 'See few even numbers', image: img, href:'/EvenNumber'},
   {title: 'See your name near "Hello!"', image: img, href:'/HelloName'},
   {title: 'Select a file', image: img, href:'/FileSelector'},
+  {title: 'Dialog', image: img, href:'/Dialog'}
 ]
 
 

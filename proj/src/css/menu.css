@@ -10,11 +10,11 @@
 
 .play-btn {
   text-align: center;
-  padding: 2px;
+  padding: 0px;
   float: right;
   box-sizing: border-box;
-  width: 20%;
-  height: 70px;
+  width: 25%;
+  height: 60px;
 }
 
 .play-btn:hover {
