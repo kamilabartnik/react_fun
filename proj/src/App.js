@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //CSS
 import './App.css';
 
 //Pages
-import Table from './Components/table';
-import Name from './Components/name';
-import Losowarka from './Components/losowarka';
-import StonePS from './Components/StonePS';
+import Table from './Components/Pages/table';
+import Name from './Components/Pages/name';
+import Losowarka from './Components/Pages/losowarka';
+import StonePS from './Components/Pages/StonePS';
 import MenuApp from './Components/MenuApp';
-import FileSelector from './Components/FileSelector';
-import Dialog from './Components/Dialog';
+import FileSelector from './Components/Pages/FileSelector';
+import Dialog from './Components/Pages/Dialog';
+import Biggest from './Components/Pages/Biggest';
 
+// function Stan (){
+//   const [stan, dajStan] = useState(this.state.text);
+// }
 
 class App extends Component {
   constructor(props) {
@@ -20,6 +25,7 @@ class App extends Component {
 
     this.state = { text: 'Dark', 
       dark: true };
+
   }
 
   handleDarkOn = (e) => {
@@ -28,7 +34,6 @@ class App extends Component {
   handleDarkOff = (e) => {
     this.setState({ dark: false, text: 'Dark' });
   }
-
 
 
   render() {
@@ -47,6 +52,13 @@ class App extends Component {
               render={() => {
                 return (
                   <StonePS />)
+              }}
+            />
+            <Route
+              path='/Biggest'
+              render={() => {
+                return (
+                  <Biggest />)
               }}
             />
             <Route

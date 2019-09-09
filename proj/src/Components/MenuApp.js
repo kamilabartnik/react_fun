@@ -10,7 +10,8 @@ const menus = [
   {title: 'See few even numbers', image: img, href:'/EvenNumber'},
   {title: 'See your name near "Hello!"', image: img, href:'/HelloName'},
   {title: 'Select a file', image: img, href:'/FileSelector'},
-  {title: 'Dialog', image: img, href:'/Dialog'}
+  {title: 'Dialog', image: img, href:'/Dialog'},
+  {title: 'Biggest', href:'/Biggest'}
 ]
 
 

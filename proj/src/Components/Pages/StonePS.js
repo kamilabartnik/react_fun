@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import paper from '../assets/img/paper.jpg';
-import scissors from '../assets/img/scissors.jpg';
-import stone from '../assets/img/stone.jpg';
-import '../css/stonePS.css'
+import paper from '../../assets/img/paper.jpg';
+import scissors from '../../assets/img/scissors.jpg';
+import stone from '../../assets/img/stone.jpg';
+import '../../css/stonePS.css'
 
 const gesture = ["Paper", "Scissors", "Stone"]
 let random;
