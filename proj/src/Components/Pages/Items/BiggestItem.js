@@ -6,7 +6,7 @@ class BiggestItem extends Component{
     return(
       <div>
         <p>Podaj liczbę:</p>
-        <input></input><br />
+        <input type="number"></input><br />
       </div>
     )
   }

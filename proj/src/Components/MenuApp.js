@@ -11,7 +11,8 @@ const menus = [
   {title: 'See your name near "Hello!"', image: img, href:'/HelloName'},
   {title: 'Select a file', image: img, href:'/FileSelector'},
   {title: 'Dialog', image: img, href:'/Dialog'},
-  {title: 'Biggest', href:'/Biggest'}
+  {title: 'Biggest', href:'/Biggest'},
+  {title: 'Timer', href:'Timer'}
 ]
 
 

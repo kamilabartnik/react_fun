@@ -13,6 +13,7 @@ import MenuApp from './Components/MenuApp';
 import FileSelector from './Components/Pages/FileSelector';
 import Dialog from './Components/Pages/Dialog';
 import Biggest from './Components/Pages/Biggest';
+import Timer from './Components/Pages/Timer';
 
 // function Stan (){
 //   const [stan, dajStan] = useState(this.state.text);
@@ -22,8 +23,10 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { text: 'Light', 
-      dark: false };
+    this.state = {
+      text: 'Light',
+      dark: false
+    };
 
   }
 
@@ -38,70 +41,77 @@ class App extends Component {
   render() {
     return (
       <div className={this.state.text}>
-      <div className="App">
+        <div className="App">
 
 
-        <div className="MenuBar">
-          <MenuApp />
-        </div>
-        <div className="Pages">
-          <Router>
-            <Route
-              path='/StonePaperScissors'
-              render={() => {
-                return (
-                  <StonePS />)
-              }}
-            />
-            <Route
-              path='/Biggest'
-              render={() => {
-                return (
-                  <Biggest />)
-              }}
-            />
-            <Route
-              path='/RandomNumber'
-              render={() => {
-                return (
-                  <Losowarka />)
-              }}
-            />
-            <Route
-              path='/Dialog'
-              render={() => {
-                return (
-                  <Dialog />)
-              }}
-            />
-            <Route
-              path='/HelloName'
-              render={() => {
-                return (
-                  <Name />)
-              }}
-            />
-            <Route
-              path='/EvenNumber'
-              render={() => {
-                return (
-                  <Table />)
-              }}
-            />
-            <Route
-              path='/FileSelector'
-              render={() => {
-                return (
-                  <FileSelector />)
-              }}
-            />
-          </Router>
-          <div className="ciemno">
-          <button onClick={this.state.dark ?
-            this.handleDarkOff
-            :this.handleDarkOn}>{this.state.text}</button>
-        </div>
-        </div>
+          <div className="MenuBar">
+            <MenuApp />
+          </div>
+          <div className="Pages">
+            <Router>
+              <Route
+                path='/StonePaperScissors'
+                render={() => {
+                  return (
+                    <StonePS />)
+                }}
+              />
+              <Route
+                path='/Biggest'
+                render={() => {
+                  return (
+                    <Biggest />)
+                }}
+              />
+              <Route
+                path='/RandomNumber'
+                render={() => {
+                  return (
+                    <Losowarka />)
+                }}
+              />
+              <Route
+                path='/Dialog'
+                render={() => {
+                  return (
+                    <Dialog />)
+                }}
+              />
+              <Route
+                path='/HelloName'
+                render={() => {
+                  return (
+                    <Name />)
+                }}
+              />
+              <Route
+                path='/EvenNumber'
+                render={() => {
+                  return (
+                    <Table />)
+                }}
+              />
+              <Route
+                path='/FileSelector'
+                render={() => {
+                  return (
+                    <FileSelector />)
+                }}
+              />
+              <Route
+                path='/Timer'
+                render={() => {
+                  return (
+                    <Timer />)
+                }}
+              />
+            </Router>
+            <div className="ciemno">
+              <button onClick={this.state.dark ?
+                this.handleDarkOff
+                : this.handleDarkOn}>{this.state.text}</button>
+            </div>
+          </div>
 
         </div>
       </div>
