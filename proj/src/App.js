@@ -22,8 +22,8 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { text: 'Dark', 
-      dark: true };
+    this.state = { text: 'Light', 
+      dark: false };
 
   }
 
