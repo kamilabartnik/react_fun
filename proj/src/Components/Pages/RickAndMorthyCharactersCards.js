@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
 const API_URL = 'https://rickandmortyapi.com/api/character/';
@@ -6,7 +6,7 @@ const UNKNOWN_AVATAR_URL = `${
   process.env.PUBLIC_URL
 }/images/unknown-avatar.png`;
 
-class RickAndMortyCharactersCards extends React.Component {
+class RickAndMortyCharactersCards extends Component {
   state = {
     characters: [],
   };
