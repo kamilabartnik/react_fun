@@ -12,7 +12,8 @@ const menus = [
   {title: 'Select a file', image: img, href:'/FileSelector'},
   {title: 'Dialog', image: img, href:'/Dialog'},
   {title: 'Biggest', href:'/Biggest'},
-  {title: 'Timer', href:'Timer'}
+  {title: 'Timer', href:'/Timer'},
+  {title: 'Rick and Morthy', href:'/RickAndMorthy'},
 ]
 
 

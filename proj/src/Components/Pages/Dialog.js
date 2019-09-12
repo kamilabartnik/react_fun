@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import DialogItem from './Items/DialogItem';
 
 
-
 class Dialog extends Component{
   constructor(props) {
     super(props);

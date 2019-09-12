@@ -14,6 +14,7 @@ import FileSelector from './Components/Pages/FileSelector';
 import Dialog from './Components/Pages/Dialog';
 import Biggest from './Components/Pages/Biggest';
 import Timer from './Components/Pages/Timer';
+import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards'
 
 // function Stan (){
 //   const [stan, dajStan] = useState(this.state.text);
@@ -103,6 +104,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <Timer />)
+                }}
+              />
+              <Route
+                path='/RickAndMorthy'
+                render={() => {
+                  return (
+                    <RickAndMorthy />)
                 }}
               />
             </Router>
