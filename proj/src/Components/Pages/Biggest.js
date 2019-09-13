@@ -8,20 +8,25 @@ class Biggest extends Component {
     super(props);
     this.state = { value: 2}
     this.table = [];
-    this.big = [];
+    this.big = 0;
     this.handleNumber = this.handleNumber.bind(this);
   }
 
-  handleNumber = (event) => {
+  handleNumber = event => {
     this.setState({value: event.target.value}, () => console.log(this.state.value));
     console.log(event.target.value);
     this.table = []
   }
 
+  bigTab = e => {
+    console.log(this.state.big);
+    this.setState({big: e.target.value}, console.log(this.state.big));
+  }
+
   render() {
 
     for(let i=0; i< this.state.value; i++) {
-      this.table.push(<BiggestItem onBlur={(n) => this.big.push(n)} key={i} />)
+      this.table.push(<BiggestItem defaultValue={this.state.big} onChange={this.bigTab} key={i} />)
     }
 
     return (
