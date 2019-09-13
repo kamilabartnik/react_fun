@@ -14,6 +14,8 @@ const menus = [
   {title: 'Biggest', href:'/Biggest'},
   {title: 'Timer', href:'/Timer'},
   {title: 'Rick and Morthy', href:'/RickAndMorthy'},
+  {title: 'StarWars', href:'/StarWars'},
+
 ]
 
 

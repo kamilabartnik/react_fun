@@ -14,11 +14,9 @@ import FileSelector from './Components/Pages/FileSelector';
 import Dialog from './Components/Pages/Dialog';
 import Biggest from './Components/Pages/Biggest';
 import Timer from './Components/Pages/Timer';
-import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards'
+import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards';
+import StarWars from './Components/Pages/StarWars';
 
-// function Stan (){
-//   const [stan, dajStan] = useState(this.state.text);
-// }
 
 class App extends Component {
   constructor(props) {
@@ -111,6 +109,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <RickAndMorthy />)
+                }}
+              />
+              <Route
+                path='/StarWars'
+                render={() => {
+                  return (
+                    <StarWars />)
                 }}
               />
             </Router>
