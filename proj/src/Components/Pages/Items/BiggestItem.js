@@ -6,16 +6,24 @@ class BiggestItem extends Component{
     super(props);
 
     this.state = {
-      bigNum: 1,
-      fromParent: Number(props.value),
-      current: Number(props.value),
+      bigNum: '',
+      tab: [],
+      // fromParent: Number(props.value),
+      // current: Number(props.value),
     }
- 
+  }
+
+  inputHandle = e => {
+    const { bigNum } = this.state;
+    this.setState({bigNum: e.target.value}, () => console.log(bigNum));
   }
 
   bigTab = e => {
-    console.log(this.state.big);
-    this.setState({bigNum: e.target.value}, console.log(this.state.big));
+    const { bigNum, tab } = this.state;
+    const temp = tab;
+    temp.push(bigNum)
+    this.setState({tab: temp, bigNum: 0})
+    tab.map(t => console.log(t));
   }
 
   // componentDidUpdate(nextProps) {
@@ -31,7 +39,8 @@ class BiggestItem extends Component{
     return(
       <div>
         <p>Podaj liczbę:</p>
-        <input onChange={this.bigTab} type="number"></input><br />
+        <input onBlur={this.bigTab} onChange={this.inputHandle} type="number" /><br />
+        <p>{this.state.tab}</p>
       </div>
     )
   }

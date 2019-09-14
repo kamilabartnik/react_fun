@@ -8,7 +8,6 @@ class Biggest extends Component {
     super(props);
     this.state = { value: 2}
     this.table = [];
-    this.big = 0;
     this.handleNumber = this.handleNumber.bind(this);
   }
 
@@ -40,9 +39,8 @@ class Biggest extends Component {
             : null}
         </div>
         <p>Największa liczba to: </p>
-        {this.big.length > 1 ?
-            <span>{this.big.map((n) => <p key={n}>{this.big}</p>)}</span>
-            : null}
+          <span></span>
+
       </div>
     )
   }
