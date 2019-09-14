@@ -15,6 +15,7 @@ const menus = [
   {title: 'Timer', href:'/Timer'},
   {title: 'Rick and Morthy', href:'/RickAndMorthy'},
   {title: 'StarWars', href:'/StarWars'},
+  {title: 'Do do list', href:'/ToDoList'},
 
 ]
 

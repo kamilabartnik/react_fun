@@ -16,6 +16,7 @@ import Biggest from './Components/Pages/Biggest';
 import Timer from './Components/Pages/Timer';
 import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards';
 import StarWars from './Components/Pages/StarWars';
+import ToDoList from './Components/Pages/ToDoList';
 
 
 class App extends Component {
@@ -116,6 +117,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <StarWars />)
+                }}
+              />
+              <Route
+                path='/ToDoList'
+                render={() => {
+                  return (
+                    <ToDoList />)
                 }}
               />
             </Router>

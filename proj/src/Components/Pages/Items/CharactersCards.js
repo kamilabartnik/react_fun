@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 const UNKNOWN_AVATAR_URL = `${
   process.env.PUBLIC_URL
@@ -31,12 +31,12 @@ const CharactersCards = ({ characters }) =>
   );
 
 
-CharactersCards.PropTypes = {
-  characters: PropTypes.arrayOf(PropTypes.shape({
-    gender: PropTypes.string,
-    image: PropTypes.string,
-    name: PropTypes.string,
-    species: PropTypes.string,
+CharactersCards.propTypes = {
+  characters: propTypes.arrayOf(propTypes.shape({
+    gender: propTypes.string,
+    image: propTypes.string,
+    name: propTypes.string,
+    species: propTypes.string,
   }))
 }
 
