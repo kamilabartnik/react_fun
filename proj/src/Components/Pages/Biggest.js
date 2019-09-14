@@ -18,16 +18,17 @@ class Biggest extends Component {
     this.table = []
   }
 
-  bigTab = e => {
-    console.log(this.state.big);
-    this.setState({big: e.target.value}, console.log(this.state.big));
-  }
+  // bigTab = e => {
+  //   console.log(this.state.big);
+  //   this.setState({big: e.target.value}, console.log(this.state.big));
+  // }
 
   render() {
 
     for(let i=0; i< this.state.value; i++) {
-      this.table.push(<BiggestItem defaultValue={this.state.big} onChange={this.bigTab} key={i} />)
+      this.table.push(<BiggestItem key={i} />)
     }
+    
 
     return (
       <div>
