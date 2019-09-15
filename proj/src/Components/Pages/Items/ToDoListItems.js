@@ -19,11 +19,15 @@ class ToDoListItem extends Component{
   }
 
   render(){
+    const { tasks, draft } = this.state;
+    const {title} = this.props;
+
     return(
       <div>
-        <h1>{this.props.title}</h1>
-        {this.props.tasks.map(task => <ToDoItemItem task={this.state.tasks} />)}
-        <input type ='text' onChange={this.updateDraft} value={this.state.draft} />
+        <h1>{title}</h1>
+
+        {tasks.map((task, i) => <ToDoItemItem key={i} task={task} />)}
+        <input type ='text' onChange={this.updateDraft} value={draft} />
         <button onClick={this.addToDo}>Add</button>
       </div>
     )
