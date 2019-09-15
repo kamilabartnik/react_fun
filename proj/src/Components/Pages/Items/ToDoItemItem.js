@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 
 class ToDoItemItem extends Component{
-  state = {
+  static defaultProps = {
     done: false
+  }
+
+  state = {
+    done: this.props.done
   }
 
   toggleDone = () => {

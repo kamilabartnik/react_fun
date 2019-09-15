@@ -14,8 +14,8 @@ class ToDoListItem extends Component{
   addToDo = () => {
     const {tasks, draft} = this.state;
     const list = tasks;
-    list.push(draft);
-    this.setState({tasks: list, draft: ''});
+    //list.push({text:draft});
+    this.setState({tasks: [...list, {text: draft}, draft: '']});
   }
 
   render(){
