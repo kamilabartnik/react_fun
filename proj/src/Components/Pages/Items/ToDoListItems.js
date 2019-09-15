@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ToDoItemItem from './ToDoItemItem';
 
 class ToDoListItem extends Component{
   state = {
@@ -21,7 +22,7 @@ class ToDoListItem extends Component{
     return(
       <div>
         <h1>{this.props.title}</h1>
-        {this.props.tasks.map(task => <div><p>{task}</p></div>)}
+        {this.props.tasks.map(task => <ToDoItemItem task={this.state.tasks} />)}
         <input type ='text' onChange={this.updateDraft} value={this.state.draft} />
         <button onClick={this.addToDo}>Add</button>
       </div>
