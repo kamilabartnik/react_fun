@@ -11,7 +11,7 @@ class ToDoItemItem extends Component{
 
   render(){
     return(
-      <div onClick={this.toggleDone}>
+      <div onClick={this.toggleDone} className={this.state.done ? 'doneToDo' : ''}>
         <p>{this.props.task.text}</p>
       </div>
     )
