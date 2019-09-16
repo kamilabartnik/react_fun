@@ -17,10 +17,9 @@ class Biggest extends Component {
     this.table = []
   }
 
-  // bigTab = e => {
-  //   console.log(this.state.big);
-  //   this.setState({big: e.target.value}, console.log(this.state.big));
-  // }
+  static getDerivedStateFromProps(props, state) {
+    console.log(state, props);
+  }
 
   render() {
 
