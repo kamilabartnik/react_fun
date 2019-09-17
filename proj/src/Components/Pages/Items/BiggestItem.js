@@ -8,8 +8,6 @@ class BiggestItem extends Component{
     this.state = {
       bigNum: '',
       tab: [],
-      // fromParent: Number(props.value),
-      // current: Number(props.value),
     }
   }
 
@@ -23,17 +21,8 @@ class BiggestItem extends Component{
     const temp = tab;
     temp.push(bigNum)
     this.setState({tab: temp, bigNum: 0})
-    tab.map(t => console.log(t));
+    //tab.map(t => console.log(t));
   }
-
-  // componentDidUpdate(nextProps) {
-  //   if (nextProps.value !== this.state.fromParent) {
-  //     this.setState({
-  //       fromParent: Number(nextProps.value),
-  //       current: Number(nextProps.value),
-  //     })
-  //   }
-  // }
 
   render(){
     return(

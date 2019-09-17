@@ -17,14 +17,27 @@ class Biggest extends Component {
     this.table = []
   }
 
-  static getDerivedStateFromProps(props, state) {
-    console.log(state, props);
+  // static getDerivedStateFromProps(props, state) {
+  //   console.log(state, props);
+  // }
+
+  inputHandle = e => {
+    const { bigNum } = this.state;
+    this.setState({bigNum: e.target.value}, () => console.log(bigNum));
+  }
+
+  bigTab = e => {
+    const { bigNum, tab } = this.state;
+    const temp = tab;
+    temp.push(bigNum)
+    this.setState({tab: temp, bigNum: 0})
+    //tab.map(t => console.log(t));
   }
 
   render() {
 
     for(let i=0; i< this.state.value; i++) {
-      this.table.push(<BiggestItem key={i} />)
+      this.table.push(<div  key={i}><input  onBlur={this.bigTab} onChange={this.inputHandle} type="number" /><br /></div>)
     }
     
 
