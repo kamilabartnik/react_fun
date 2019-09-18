@@ -2,10 +2,10 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 
 const Button = styled.button`
-  background: white;
-  border: 5px solid yellow;
+  background: $(props => props.theme.backgroundColor);
+  border: 5px solid $(props => props.theme.primaryColor);
   front-size: 20px;
-  color: black;
+  color: $(props => props.theme.primaryColor);
 
   ${props => props.primary && css`
     background: blue;
