@@ -17,6 +17,7 @@ import Timer from './Components/Pages/Timer';
 import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards';
 import StarWars from './Components/Pages/StarWars';
 import ToDoList from './Components/Pages/ToDoList';
+import Calc from './Components/Pages/Calc';
 
 
 class App extends Component {
@@ -124,6 +125,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <ToDoList />)
+                }}
+              />
+              <Route
+                path='/Calc'
+                render={() => {
+                  return (
+                    <Calc />)
                 }}
               />
             </Router>

@@ -62,7 +62,7 @@ class Calc extends Component {
         ];
 
         return (
-            <div className="Aplication">
+            <div className="Application">
                 {this.state.previous.length > 0 ? 
                 <div className="floaty-last">{this.state.previous[this.state.previous.length-1]}</div> 
                 :null }
