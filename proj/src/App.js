@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
 
 //themes
-import LightTheme from './Components/common/theme/light';
-import DarkTheme from './Components/common/theme/dark';
+// import LightTheme from './Components/common/theme/light';
+// import DarkTheme from './Components/common/theme/dark';
 
 //CSS
-import './App.css';
+import './css/App.css';
 
 //Pages
 import Table from './Components/Pages/table';
@@ -45,7 +45,7 @@ class App extends Component {
 
   render() {
     return (
-      <ThemeProvider theme={LightTheme} >
+      // <ThemeProvider theme={LightTheme} >
       <div className={this.state.text}>
         <div className="App">
           <div className="MenuBar">
@@ -152,7 +152,7 @@ class App extends Component {
 
         </div>
       </div>
-      </ThemeProvider>
+      // </ThemeProvider>
     );
   }
 }

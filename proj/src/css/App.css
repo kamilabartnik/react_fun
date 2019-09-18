@@ -1,15 +1,11 @@
 .App {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
-  width: 900px;
+  width: 100vw;
   color: #4CAF50;
-  min-height: 900px;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
-}
-
-.MenuBar{
-  margin-top: 10px;
 }
 
 .Pages {
@@ -18,8 +14,6 @@
 
 .Light {
   background:  rgb(16, 37, 17);
-  min-height: 900px;
-  width: 100%;
 }
 
 button {
