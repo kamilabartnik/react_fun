@@ -24,6 +24,7 @@ import StarWars from './Components/Pages/StarWars';
 import ToDoList from './Components/Pages/ToDoList';
 import Calc from './Components/Pages/Calc';
 import ButtonWithStyled from './Components/common/Button';
+import Race from './Components/Pages/Race';
 
 
 class App extends Component {
@@ -39,8 +40,8 @@ class App extends Component {
 
   handleDarkOn = (e) => {
     this.state.dark ?
-    this.setState({ dark: false, text: 'Dark' })
-    : this.setState({ dark: true, text: 'Light' });
+      this.setState({ dark: false, text: 'Dark' })
+      : this.setState({ dark: true, text: 'Light' });
   }
 
   render() {
@@ -142,6 +143,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <ButtonWithStyled> Test Button </ButtonWithStyled>)
+                }}
+              />
+              <Route
+                path='/Race'
+                render={() => {
+                  return (
+                    <Race />)
                 }}
               />
             </Router>

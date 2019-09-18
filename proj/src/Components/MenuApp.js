@@ -17,7 +17,8 @@ const menus = [
   {title: 'StarWars', href:'/StarWars'},
   {title: 'Do do list', href:'/ToDoList'},
   {title: 'Calc', href:'/Calc'},
-  {title: 'Styled Button', href:'/BWS'}
+  {title: 'Styled Button', href:'/BWS'},
+  {title: 'Race', href:'/Race'},
 ]
 
 

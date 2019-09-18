@@ -1,0 +1,39 @@
+.animation{
+    background-color: darkgray;
+}
+
+.race {
+  height: 70vh;
+  background: url(../img/001-car.png) no-repeat,
+    url(../img/002-van.png) no-repeat,
+    url(../img/003-automobile.png) no-repeat,
+    url(../img/004-trucking.png) no-repeat,
+    url(../img/005-car-1.png) no-repeat,
+    url(../img/006-delivery-truck.png) no-repeat,
+    url(../img/007-racing.png) no-repeat,
+    url(../img/road.png) repeat;
+
+    background-size: auto 15%, 
+                    auto 15%, 
+                    auto 15%, 
+                    auto 20%, 
+                    auto 15%, 
+                    auto 15%, 
+                    auto 15%,
+                    auto 32%;
+    
+    background-position: top 2% left 3%,
+                        top 22% left 3%,
+                        top 40% left 3%,
+                        top 57% left 3%,
+                        top 73% left 3%,
+                        top 92% left 3%,
+                        top 35% left -150%,
+                        top 0% left 0%;
+
+}
+
+.credits {
+  position: fixed;
+  bottom: 0px;
+}
