@@ -18,6 +18,7 @@ import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards';
 import StarWars from './Components/Pages/StarWars';
 import ToDoList from './Components/Pages/ToDoList';
 import Calc from './Components/Pages/Calc';
+import ButtonWithStyled from './Components/common/Button';
 
 
 class App extends Component {
@@ -132,6 +133,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <Calc />)
+                }}
+              />
+              <Route
+                path='/BWS'
+                render={() => {
+                  return (
+                    <ButtonWithStyled primary> Test Button </ButtonWithStyled>)
                 }}
               />
             </Router>

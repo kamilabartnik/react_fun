@@ -16,7 +16,8 @@ const menus = [
   {title: 'Rick and Morthy', href:'/RickAndMorthy'},
   {title: 'StarWars', href:'/StarWars'},
   {title: 'Do do list', href:'/ToDoList'},
-  {title: 'Calc', href:'/Calc'}
+  {title: 'Calc', href:'/Calc'},
+  {title: 'Styled Button', href:'/BWS'}
 ]
 
 

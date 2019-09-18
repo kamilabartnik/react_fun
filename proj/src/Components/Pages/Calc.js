@@ -32,7 +32,7 @@ class Calc extends Component {
         }
     }
 
-    calculate = (symbol) => {
+    calculate = () => {
         let {current, previous, nextIsReset} = this.state;
         if(previous.length >0 ){
             current = eval(String(previous[previous.length-1] + current));
