@@ -27,10 +27,22 @@
                         top 40% left 3%,
                         top 57% left 3%,
                         top 73% left 3%,
-                        top 92% left 3%,
+                        top 95% left 3%,
                         top 35% left -150%,
                         top 0% left 0%;
+    transition: background-position 10s ease;
+    -webkit-transition: all 1s easy-out;
+}
 
+.race:hover {
+  background-position: top 2% left 80%,
+                    top 22% left 60%,
+                    top 40% left 100%,
+                    top 57% left 45%,
+                    top 73% left 72%,
+                    top 95% left 83%,
+                    top 73% left 380%,
+                    top 0% left -1000%;
 }
 
 .credits {
