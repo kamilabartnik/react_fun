@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+
+//themes
+import LightTheme from './Components/common/theme/light';
+import DarkTheme from './Components/common/theme/dark';
 
 //CSS
 import './App.css';
@@ -33,19 +38,16 @@ class App extends Component {
   }
 
   handleDarkOn = (e) => {
-    this.setState({ dark: true, text: 'Light' });
+    this.state.dark ?
+    this.setState({ dark: false, text: 'Dark' })
+    : this.setState({ dark: true, text: 'Light' });
   }
-  handleDarkOff = (e) => {
-    this.setState({ dark: false, text: 'Dark' });
-  }
-
 
   render() {
     return (
+      <ThemeProvider theme={LightTheme} >
       <div className={this.state.text}>
         <div className="App">
-
-
           <div className="MenuBar">
             <MenuApp />
           </div>
@@ -139,19 +141,18 @@ class App extends Component {
                 path='/BWS'
                 render={() => {
                   return (
-                    <ButtonWithStyled primary> Test Button </ButtonWithStyled>)
+                    <ButtonWithStyled> Test Button </ButtonWithStyled>)
                 }}
               />
             </Router>
             <div className="ciemno">
-              <button onClick={this.state.dark ?
-                this.handleDarkOff
-                : this.handleDarkOn}>{this.state.text}</button>
+              <button onClick={this.handleDarkOn}>{this.state.text}</button>
             </div>
           </div>
 
         </div>
       </div>
+      </ThemeProvider>
     );
   }
 }
