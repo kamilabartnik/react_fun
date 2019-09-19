@@ -22,16 +22,16 @@
                     auto 15%,
                     auto 32%;
     
-    background-position: top 2% left 3%,
+    background-position: top 2% left 2%,
                         top 22% left 3%,
-                        top 40% left 3%,
-                        top 57% left 3%,
+                        top 40% left 5%,
+                        top 57% left 1%,
                         top 73% left 3%,
                         top 95% left 3%,
                         top 35% left -150%,
                         top 0% left 0%;
     transition: background-position 10s ease;
-    -webkit-transition: all 1s easy-out;
+    -webkit-transition: all 5s easy-out;
 }
 
 .race:hover {
