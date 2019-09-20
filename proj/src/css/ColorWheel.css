@@ -11,6 +11,7 @@
   border-top: 120px solid rgb(199, 173, 87);
   margin: auto auto;
   transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
+  z-index: 1;
 }
 
 .circle:hover {
@@ -26,5 +27,53 @@
 }
 
 .wheelBtn {
-  margin: 20px auto;
+  margin: 20px -50px;
+  z-index: 1;
+  width: 100px
+}
+
+.dark, .switch, .cirle, .wheelBtn {
+  position: absolute;
+} 
+
+.dark {
+  width: 30vw;
+  height: 30vh;
+  background-color: transparent;
+  z-index: 2;
+  border-radius: 50%;
+  top: 270px;
+  left: 30px;
+  transition: all 900ms ease;
+}
+
+.switch {
+  width: 100px;
+  height: 100px;
+  border: 50px solid rgba(247, 255, 250, 0.808);
+  z-index: 3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: 270px;
+  left: 30px;
+  animation: switchOff 3000ms linear infinite alternate;
+}
+
+.switch:hover {
+  animation: none;
+}
+
+.switch:hover + .dark {
+  background-color: rgb(9, 17, 9);
+}
+
+@keyframes switchOff {
+  from {
+    border: 0px solid rgba(247, 255, 250, 0.808);
+    opacity: 0;
+  }
+  to {
+    border: 50px solid rgba(247, 255, 250, 0.808);
+    opacity: 1;
+  }
 }

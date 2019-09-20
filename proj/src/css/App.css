@@ -10,10 +10,14 @@
 
 .Pages {
   margin-top: 150px;
+  width: 100vw;
+  min-height: 70vh;
 }
 
 .Dark {
   background:  rgb(16, 37, 17);
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .Light {
