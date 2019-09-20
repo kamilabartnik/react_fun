@@ -33,22 +33,20 @@ class App extends Component {
     super(props);
 
     this.state = {
-      text: 'Light',
-      dark: false
+      dark: true
     };
 
   }
 
   handleDarkOn = (e) => {
-    this.state.dark ?
-      this.setState({ dark: false, text: 'Dark' })
-      : this.setState({ dark: true, text: 'Light' });
+    const currentState = this.state.dark;
+    this.setState({dark: !currentState});
   }
 
   render() {
     return (
       // <ThemeProvider theme={LightTheme} >
-      <div className={this.state.text}>
+      <div className={this.state.dark ? 'Dark' : 'Light'}>
         <div className="App">
           <div className="MenuBar">
             <MenuApp />
@@ -162,7 +160,7 @@ class App extends Component {
               />
             </Router>
             <div className="ciemno">
-              <button onClick={this.handleDarkOn}>{this.state.text}</button>
+              <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>
           </div>
 

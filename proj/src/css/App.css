@@ -12,8 +12,12 @@
   margin-top: 150px;
 }
 
-.Light {
+.Dark {
   background:  rgb(16, 37, 17);
+}
+
+.Light {
+  background:  rgb(231, 240, 231);
 }
 
 button {
