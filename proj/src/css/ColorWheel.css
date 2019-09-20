@@ -1,0 +1,30 @@
+.circle {
+  width: 30vh;
+  height: 30vh;
+  background: url(../img/002-van.png) no-repeat; 
+  background-position: 10px 10px;
+  background-size: auto 90%;
+  border-radius: 50%;
+  border-bottom: 120px solid rgb(255, 243, 135);
+  border-right: 120px solid rgb(218, 199, 34);
+  border-left: 120px solid orange;
+  border-top: 120px solid rgb(199, 173, 87);
+  margin: auto auto;
+  transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
+}
+
+.circle:hover {
+  transform: rotate(3600deg) scale(0);
+}
+
+.active {
+  transform: rotate(3600deg);
+  /* border-bottom-color: 120px solid rgb(199, 173, 87);
+  border-top-color: 120px solid rgb(255, 243, 135);
+  border-left-color: 120px solid rgb(218, 199, 34);
+  border-right-color: 120px solid orange; */
+}
+
+.wheelBtn {
+  margin: 20px auto;
+}

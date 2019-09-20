@@ -19,6 +19,7 @@ const menus = [
   {title: 'Calc', href:'/Calc'},
   {title: 'Styled Button', href:'/BWS'},
   {title: 'Race', href:'/Race'},
+  {title: 'Color Wheel', href: './ColorWheel'}
 ]
 
 
