@@ -1,0 +1,15 @@
+.MenuDrop {
+  width: 100vw;
+  height: 1vh;
+  margin: 0px;
+}
+
+.dropdown-item {
+  margin: 0px;
+  float: left;
+  box-sizing: border-box;
+  width: 25vw;
+  height: 60px;
+  display: block;
+}
+

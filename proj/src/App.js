@@ -51,9 +51,10 @@ class App extends Component {
       // <ThemeProvider theme={LightTheme} >
       <div className={this.state.dark ? 'Dark' : 'Light'}>
         <div className="App">
-          <NavBar />
+          
           <div className="MenuBar">
-            <MenuApp />
+            <NavBar />
+            {/* <MenuApp /> */}
           </div>
           <div className="Pages">
             <Router>
