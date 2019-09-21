@@ -9,12 +9,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 //CSS
 import './css/App.css';
 
+//Menu
+import MenuApp from './Components/MenuApp';
+import NavBar from './Components/NavBar';
+
 //Pages
 import Table from './Components/Pages/table';
 import Name from './Components/Pages/name';
 import Losowarka from './Components/Pages/losowarka';
 import StonePS from './Components/Pages/StonePS';
-import MenuApp from './Components/MenuApp';
 import FileSelector from './Components/Pages/FileSelector';
 import Dialog from './Components/Pages/Dialog';
 import Biggest from './Components/Pages/Biggest';
@@ -48,6 +51,7 @@ class App extends Component {
       // <ThemeProvider theme={LightTheme} >
       <div className={this.state.dark ? 'Dark' : 'Light'}>
         <div className="App">
+          <NavBar />
           <div className="MenuBar">
             <MenuApp />
           </div>
