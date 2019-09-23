@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './css/App.css';
 
 //Menu
-import MenuApp from './Components/MenuApp';
 import NavBar from './Components/NavBar';
 
 //Pages
@@ -53,8 +52,8 @@ class App extends Component {
         <div className="App">
           
           <div className="MenuBar">
+            {/* <NavBarDemo /> */}
             <NavBar />
-            {/* <MenuApp /> */}
           </div>
           <div className="Pages">
             <Router>

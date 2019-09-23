@@ -33,8 +33,9 @@ class Calc extends Component {
     }
 
     calculate = () => {
-        let {current, previous, nextIsReset} = this.state;
+        let {current, previous} = this.state;
         if(previous.length >0 ){
+            // eslint-disable-next-line
             current = eval(String(previous[previous.length-1] + current));
             this.setState({current, previous: [], nextIsReset: true})
         } 

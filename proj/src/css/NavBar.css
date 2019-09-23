@@ -5,12 +5,15 @@
   background: rgb(6, 17, 4);
 }
 
+.dropdown {
+  float: left;
+}
+
 .MenuDrop {
   margin: 0px;
   height: 60px;
   float: left;
   box-sizing: border-box;
-
   display: block;
 }
 
