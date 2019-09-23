@@ -39,8 +39,14 @@ class NavBarDemo extends Component {
     super(props);
 
     this.state = {
-      show: false
+      show: false,
+      menus: (this.props.menu === "menuBasic" ? this.menus = menuBasic
+              : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
+              : this.props.menu === "menuGames" ? this.menus = menuGames
+              : this.props.menu === "menuCSS" ? this.menus = menuCSS
+              : this.menus = menuApi )
     }
+
     this.doSomething = this.doSomething.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
     this.hide = this.hide.bind(this);
@@ -81,10 +87,14 @@ class NavBarDemo extends Component {
         </div>
         <div className="MenuDrop">
         {
-          this.state.show &&
-          this.props.menu.map((item, index) => {
-            return <MenuItem {...item} key={index} />
-          })
+          this.state.show && this.state.menus && (
+            // this.props.menu === "menuBasic" ? 
+            //     menuBasic.map((item, index) => {
+            //     return <MenuItem {...item} key={index} /> })
+            //     : 
+                
+                this.state.menus.map((menu, index) => {
+                return <MenuItem key={index} {...menu} /> }) )
         }
         </div>
       </div>
