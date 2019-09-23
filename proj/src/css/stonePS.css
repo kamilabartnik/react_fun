@@ -47,3 +47,16 @@
   background: #4CAF50;
   color: white;
 }
+
+.sumResults {
+  text-align: center;
+  height: 30px;
+  margin-left: 0px;
+}
+
+.win, .lost {
+  float: left;
+  margin: auto auto;
+  padding: 10px;
+  margin-left: 120px;
+}
