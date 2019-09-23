@@ -1,17 +1,5 @@
-.App {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+body {
   text-align: center;
-  width: 100vw;
-  color: #4CAF50;
-  min-height: 100vh;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.Pages {
-  margin-top: 50px;
-  width: 100vw;
-  min-height: 70vh;
 }
 
 .Dark {
@@ -23,6 +11,23 @@
 .Light {
   background:  rgb(231, 240, 231);
 }
+
+.App {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100vw;
+  max-width: 1000px;
+  color: #4CAF50;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Pages {
+  margin-top: 120px;
+  min-height: 70vh;
+}
+
+
 
 button {
   background-color: rgba(247, 255, 250, 0.808);

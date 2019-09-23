@@ -2,8 +2,19 @@
   width: 100vw;
   height: 30px;
   margin: 0px;
-  background: rgb(6, 17, 4);
+  background: rgb(19, 32, 12);
+  opacity: 0,1;
   text-align: left;
+}
+
+.btn {
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.menuShow button {
+  min-height: 50vh;
 }
 
 .Nav {
