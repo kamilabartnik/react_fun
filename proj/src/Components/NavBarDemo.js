@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MenuItem from './MenuItem';
-import '../css/NavBar.css'
 
 const menuBasic = [
 
@@ -74,28 +73,23 @@ class NavBarDemo extends Component {
     return(
       <div className="dropdown">
         <div className="MenuShow">
-        <button 
-          className="btn btn-primary dropdown-toggle"
-          type="button"
-          onClick={this.toggleShow}
-          onBlur={this.hide}
-        >
+          <button
+            className="btn btn-primary dropdown-toggle"
+            type="button"
+            onClick={this.toggleShow}
+            onBlur={this.hide}
+          >
 
-        {this.props.title}
-          
-        </button>
+            {this.props.title}
+
+          </button>
         </div>
         <div className="MenuDrop">
-        {
-          this.state.show && this.state.menus && (
-            // this.props.menu === "menuBasic" ? 
-            //     menuBasic.map((item, index) => {
-            //     return <MenuItem {...item} key={index} /> })
-            //     : 
-                
-                this.state.menus.map((menu, index) => {
-                return <MenuItem key={index} {...menu} /> }) )
-        }
+          {
+            this.state.show && this.state.menus.map((menu, index) => {
+              return <MenuItem key={index} {...menu} />
+            })
+          }
         </div>
       </div>
     );

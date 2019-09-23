@@ -1,12 +1,13 @@
 .MenuBlock {
   width: 100vw;
-  height: 25px;
+  height: 30px;
   margin: 0px;
   background: rgb(6, 17, 4);
+  text-align: left;
 }
 
-.MenuShow {
-
+.Nav {
+  float:none;
 }
 
 .dropdown {

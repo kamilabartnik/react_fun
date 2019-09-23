@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import NavBarDemo from './NavBarDemo';
 import '../css/NavBar.css'
 
+const menusNav = [
+  {menu:"menuBasic", title:"React Basic"},
+  {menu:"menuReactFun", title:"React Fun"},
+  {menu:"menuGames", title:"Games"},
+  {menu:"menuCSS", title:"CSS Fun"},
+  {menu:"menuApi", title:"API Fun"}
+]
 
 class NavBar extends Component {
 
@@ -9,11 +16,10 @@ class NavBar extends Component {
   render() {
     return (
       <div className="MenuBlock">
-        <NavBarDemo menu="menuBasic" title="React Basic" />
-        <NavBarDemo menu="menuReactFun" title="React Fun" />
-        <NavBarDemo menu="menuGames" title="Games" />
-        <NavBarDemo menu="menuCSS" title="CSS Fun" />
-        <NavBarDemo menu="menuApi" title="API Fun" />
+        {menusNav.map((menu, index) => {
+        return <div className="Nav">
+                <NavBarDemo className={NavBarDemo} key={index} {...menu} />
+              </div> })}
       </div>
     )
   }
