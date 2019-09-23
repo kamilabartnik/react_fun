@@ -1,15 +1,16 @@
-.MenuDrop {
+.MenuBlock {
   width: 100vw;
-  height: 1vh;
+  height: 25px;
   margin: 0px;
+  background: rgb(6, 17, 4);
 }
 
-.dropdown-item {
+.MenuDrop {
   margin: 0px;
+  height: 60px;
   float: left;
   box-sizing: border-box;
-  width: 25vw;
-  height: 60px;
+
   display: block;
 }
 

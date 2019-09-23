@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Dropdown, DropdownButton } from 'react-bootstrap';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton'
 import MenuItem from './MenuItem';
 import '../css/NavBar.css'
 
@@ -11,10 +12,8 @@ const menuBasic = [
   { title: 'Select a file', href: '/FileSelector' },
   { title: 'Family Dialog', href: '/Dialog' },
   { title: 'Timer', href: '/Timer' },
-  { title: 'Rick and Morthy', href: '/RickAndMorthy' },
-  { title: 'StarWars', href: '/StarWars' },
-  { title: 'Race', href: '/Race' },
-  { title: 'Color Wheel', href: './ColorWheel' }
+
+
 ]
 
 const menuReactFun = [
@@ -28,35 +27,64 @@ const menuGames = [
   { title: 'Play Stone Paper Scissors', href: '/StonePaperScissors' },
 ]
 
+const menuCSS = [
+  { title: 'Race', href: '/Race' },
+  { title: 'Color Wheel', href: './ColorWheel' }
+]
+
+const menuApi = [
+  { title: 'Rick and Morthy', href: '/RickAndMorthy' },
+  { title: 'StarWars', href: '/StarWars' },
+]
+
+
 class NavBar extends Component {
   render() {
     return (
-      <div>
+      <div className="MenuBlock">
         <Dropdown className="MenuDrop">
           <DropdownButton className="dropdown-item-button" title="Basic React">
-            <div className="dropdown-item">
+            <Dropdown.Item className="dropdown-item">
             {menuBasic.map((item, index) => {
               return <MenuItem {...item} key={index} />
             })}
-            </div>
+            </Dropdown.Item>
           </DropdownButton>
         </Dropdown>
         <Dropdown className="MenuDrop">
           <DropdownButton className="dropdown-item-button" title="React Fun">
-          <div className="dropdown-item">
+          <Dropdown.Item className="dropdown-item">
             {menuReactFun.map((item, index) => {
               return <MenuItem {...item} key={index} />
             })}
-            </div>
+            </Dropdown.Item>
           </DropdownButton>
         </Dropdown>
         <Dropdown className="MenuDrop">
           <DropdownButton className="dropdown-item-button" title="Games">
-          <div className="dropdown-item">
+          <Dropdown.Item className="dropdown-item">
             {menuGames.map((item, index) => {
               return <MenuItem {...item} key={index} />
             })}
-            </div>
+            </Dropdown.Item>
+          </DropdownButton>
+        </Dropdown>
+        <Dropdown className="MenuDrop">
+          <DropdownButton className="dropdown-item-button" title="CSS Fun">
+          <Dropdown.Item className="dropdown-item">
+            {menuCSS.map((item, index) => {
+              return <MenuItem {...item} key={index} />
+            })}
+            </Dropdown.Item>
+          </DropdownButton>
+        </Dropdown>
+        <Dropdown className="MenuDrop">
+          <DropdownButton className="dropdown-item-button" title="API fun">
+          <Dropdown.Item className="dropdown-item">
+            {menuApi.map((item, index) => {
+              return <MenuItem {...item} key={index} />
+            })}
+            </Dropdown.Item>
           </DropdownButton>
         </Dropdown>
       </div>
