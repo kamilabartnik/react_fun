@@ -67,6 +67,7 @@ class NavBarDemo extends Component {
   render(){
     return(
       <div className="dropdown">
+        <div className="MenuShow">
         <button 
           className="btn btn-primary dropdown-toggle"
           type="button"
@@ -77,10 +78,11 @@ class NavBarDemo extends Component {
         {this.props.title}
           
         </button>
+        </div>
         <div className="MenuDrop">
         {
           this.state.show &&
-          menuBasic.map((item, index) => {
+          this.props.menu.map((item, index) => {
             return <MenuItem {...item} key={index} />
           })
         }
