@@ -17,6 +17,7 @@ const menuReactFun = [
   { title: 'Do do list', href: '/ToDoList' },
   { title: 'Calc', href: '/Calc' },
   { title: 'Styled Button', href: '/BWS' },
+  { title: 'Chart Animation', href: '/Chart'},
 ]
 
 const menuGames = [

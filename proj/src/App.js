@@ -28,6 +28,7 @@ import Calc from './Components/Pages/Calc';
 import ButtonWithStyled from './Components/common/Button';
 import Race from './Components/Pages/Race';
 import ColorWheel from './Components/Pages/ColorWheel';
+import Charts from './Components/Pages/Charts';
 
 
 class App extends Component {
@@ -161,6 +162,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <ColorWheel />)
+                }}
+              />
+              <Route
+                path='/Chart'
+                render={() => {
+                  return (
+                    <Charts />)
                 }}
               />
             </Router>

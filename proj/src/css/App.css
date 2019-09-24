@@ -30,8 +30,6 @@ body {
   min-height: 70vh;
 }
 
-
-
 button {
   background-color: rgba(247, 255, 250, 0.808);
   -webkit-transition-duration: 0.4s; /* Safari */

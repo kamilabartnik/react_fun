@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/ColorWheel.css';
+import '../../css/Pages/ColorWheel.css';
 
 
 class ColorWheel extends Component {

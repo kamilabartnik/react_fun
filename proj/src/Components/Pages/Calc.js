@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../css/calc.css';
+import '../../css/Pages/calc.css';
 import CalcButton from './Items/CalcButton'
 
 

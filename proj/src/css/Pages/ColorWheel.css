@@ -1,7 +1,7 @@
 .circle {
   width: 30vh;
   height: 30vh;
-  background: url(../img/002-van.png) no-repeat; 
+  background: url(../../img/002-van.png) no-repeat; 
   background-position: 10px 10px;
   background-size: auto 90%;
   border-radius: 50%;

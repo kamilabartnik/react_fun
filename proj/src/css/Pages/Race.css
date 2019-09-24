@@ -4,14 +4,14 @@
 
 .race {
   height: 70vh;
-  background: url(../img/001-car.png) no-repeat,
-    url(../img/002-van.png) no-repeat,
-    url(../img/003-automobile.png) no-repeat,
-    url(../img/004-trucking.png) no-repeat,
-    url(../img/005-car-1.png) no-repeat,
-    url(../img/006-delivery-truck.png) no-repeat,
-    url(../img/007-racing.png) no-repeat,
-    url(../img/road.png) repeat;
+  background: url(../../img/001-car.png) no-repeat,
+    url(../../img/002-van.png) no-repeat,
+    url(../../img/003-automobile.png) no-repeat,
+    url(../../img/004-trucking.png) no-repeat,
+    url(../../img/005-car-1.png) no-repeat,
+    url(../../img/006-delivery-truck.png) no-repeat,
+    url(../../img/007-racing.png) no-repeat,
+    url(../../img/road.png) repeat;
 
     background-size: auto 15%, 
                     auto 15%, 
