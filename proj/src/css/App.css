@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 html {
+  text-align: center;
   background:  rgb(16, 37, 17);
 }
 
@@ -21,6 +22,7 @@ body {
 }
 
 .App {
+  position: absolute;
   font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
   width: 100vw;
   max-width: 900px;
