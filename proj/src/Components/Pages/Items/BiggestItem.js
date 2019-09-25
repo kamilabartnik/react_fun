@@ -19,7 +19,7 @@ class BiggestItem extends Component{
     return(
       <div>
         <p>Choose number:
-        <input className="bigInput" onBlur={this.bigTab} type="number" />
+        <input className="bigInput" onBlur={this.props.handleInput} type="number" />
         {this.state.bigNum}</p>
       </div>
     )

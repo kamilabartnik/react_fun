@@ -18,8 +18,8 @@ class NavBar extends Component {
     return (
       <div className="MenuBlock">
         {menusNav.map((menu, index) => {
-        return <div className="Nav">
-                <NavBarDemo className={NavBarDemo} key={index} {...menu} />
+        return <div  key={index} className="Nav">
+                <NavBarDemo className={NavBarDemo} {...menu} />
               </div> })}
       </div>
     )
