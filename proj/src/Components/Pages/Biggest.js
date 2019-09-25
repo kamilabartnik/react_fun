@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// eslint-disable-next-line
 import BiggestItem from './Items/BiggestItem';
+import '../../css/Pages/biggest.css'
 
 
 
@@ -38,20 +38,20 @@ class Biggest extends Component {
   render() {
 
     for(let i=0; i< this.state.value; i++) {
-      this.table.push(<div  key={i}><input  onBlur={this.bigTab} onChange={this.inputHandle} type="number" /><br /></div>)
+      this.table.push(<div key={i}><BiggestItem onBlur={this.bigTab} onChange={this.inputHandle} type="number" /><br /></div>)
     }
     
 
     return (
       <div>
-        <p>How many numbers you want to pass?</p>
-        <input type="number" min="2" max="6" onChange={this.handleNumber} defaultValue={this.state.value} />
+        <p className="pbig">How many numbers do you want to pass?</p>
+        <input className="inputNumbers" type="number" min="2" max="6" onChange={this.handleNumber} defaultValue={this.state.value} />
         <div>
           {this.state.value > 1 ?
             <span>{this.table}</span>
             : null}
         </div>
-        <p>Największa liczba to: </p>
+        <p className="pbig">The biggest number: </p>
           <span></span>
 
       </div>
