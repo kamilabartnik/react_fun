@@ -15,15 +15,16 @@ class Charts extends Component {
           <div className="myChart">
             {/* <MyChart /> */}
           </div>
+          <div className="donutGraph">
+            <Donut />
+          </div>
           <div className="barGraph">
             <BarGraphChart />
           </div>
           <div className="lineGraph">
             <LineChart />
           </div>
-          <div className="donutGraph">
-            <Donut />
-          </div>
+
           <div className="close"></div>
         </div>
       </div>
