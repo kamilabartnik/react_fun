@@ -23,7 +23,7 @@ body {
 .App {
   font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
   width: 100vw;
-  max-width: 1000px;
+  max-width: 900px;
   color: #4CAF50;
   min-height: 100vh;
   margin-right: auto;
@@ -31,13 +31,13 @@ body {
 }
 
 .Pages {
-  margin-top: 80px;
+  margin-top: 50px;
   min-height: 70vh;
 }
 
 button {
   font-family: 'Special Elite';
-  font-size: 15px;
+  font-size: 13px;
   background-color: rgba(247, 255, 250, 0.808);
   -webkit-transition-duration: 0.4s;
   /*Safari*/transition-duration: 0.4s;
