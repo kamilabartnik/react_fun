@@ -3,17 +3,17 @@ import BiggestItem from './Items/BiggestItem';
 import '../../css/Pages/biggest.css'
 
 
-
 class Biggest extends Component {
   constructor(props) {
     super(props);
     this.state = { value: 2}
     this.table = [];
     this.handleNumber = this.handleNumber.bind(this);
+    this.handleInput = this.handleInput.bind(this);
   }
 
   handleNumber = event => {
-    this.setState({value: event.target.value}, () => console.log());
+    this.setState({value: event.target.value});
     this.table = []
   }
 

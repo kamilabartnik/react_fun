@@ -11,6 +11,7 @@ import './css/App.css';
 
 //Menu
 import NavBar from './Components/NavBar';
+import MenuDrop from './Components/MenuDrop';
 
 //Pages
 import Table from './Components/Pages/table';
@@ -51,12 +52,12 @@ class App extends Component {
       // <ThemeProvider theme={LightTheme} >
       
       <div className={this.state.dark ? 'Dark' : 'Light'}>
-        <div className="App">
+        <div className="MenuBar">
           
-          <div className="MenuBar">
-            {/* <NavBarDemo /> */}
-            <NavBar />
-          </div>
+          {/* <NavBar /> */}
+          <MenuDrop />
+        </div>
+        <div className="App">
           <div className="Pages">
             <Router>
               <Route

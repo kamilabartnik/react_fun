@@ -8,6 +8,7 @@ class BiggestItem extends Component{
     this.state = {
       bigNum: '',
     }
+
   }
 
   bigTab = e => {
