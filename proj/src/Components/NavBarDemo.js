@@ -4,9 +4,9 @@ import '../css/NavBar.css'
 
 const menuBasic = [
 
-  { title: 'Get random name', href: '/RandomNumber' },
-  { title: 'See few even numbers', href: '/EvenNumber' },
-  { title: 'See your name near "Hello!"', href: '/HelloName' },
+  { title: 'Random name', href: '/RandomNumber' },
+  { title: 'Few numbers', href: '/EvenNumber' },
+  { title: '"Hello!"', href: '/HelloName' },
   { title: 'Select a file', href: '/FileSelector' },
   { title: 'Family Dialog', href: '/Dialog' },
   { title: 'Timer', href: '/Timer' },

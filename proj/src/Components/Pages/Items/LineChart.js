@@ -1,40 +1,30 @@
-import React, { Component } from "react";
-import Chart from "react-apexcharts";
+import React, { Component } from 'react';
+import Chart from 'react-apexcharts'
 
 class LineChart extends Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
       options: {
-        chart: {
-          id: "basic-bar"
-        },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          categories: [1991,1992,1993,1994,1995,1996,1997,1998,1999]
         }
       },
-      series: [
-        {
-          name: "So true",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
-        }
-      ]
-    };
+      series: [{
+        name: 'sales',
+        data: [130,40,35,50,49,60,70,91,125]
+      }],
+
+    }
   }
+
   render() {
+
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-          <Chart
-          options={this.state.options}
-          series={this.state.series}
-          type="line"
-          width="500"
-        />
-          </div>
-        </div>
+      <div className="myLineChart">
+        <Chart type='line' options={this.state.options} series={this.state.series} />
       </div>
     );
   }

@@ -1,16 +1,19 @@
 .MenuBlock {
-  width: 100vw;
+  width: 1000px;
   height: 30px;
   margin: 0px;
-  background: rgb(19, 32, 12);
-  opacity: 0,1;
+  background: rgb(19, 32, 12, 0.5);
   text-align: left;
 }
 
 .btn {
-  font-size: 15px;
-  letter-spacing: 3px;
-  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 7px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .menuShow button {

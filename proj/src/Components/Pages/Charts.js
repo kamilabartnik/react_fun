@@ -10,9 +10,10 @@ class Charts extends Component {
   render() {
     return (
       <div className="chartApp">
+        <h1 className="info">Charts generated using Apexcharts</h1>
         <div className="row">
           <div className="myChart">
-            <MyChart />
+            {/* <MyChart /> */}
           </div>
           <div className="barGraph">
             <BarGraphChart />
@@ -23,6 +24,7 @@ class Charts extends Component {
           <div className="donutGraph">
             <Donut />
           </div>
+          <div className="close"></div>
         </div>
       </div>
     );
