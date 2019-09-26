@@ -1,6 +1,5 @@
 import React from 'react';
 import MenuItem from './MenuItem';
-//import '../css/Pages/dropMenu.css';
 
 const menuBasic = [
 
@@ -73,8 +72,8 @@ class MenuDrop extends React.Component {
   render() {
     return (
       <div className="dropdown" >
-        <div className="MenuBlock">
-        <div className="button" onClick={this.showDropdownMenu}> {this.props.title} </div>
+        <div>
+        <div className="buttonDrop" onClick={this.showDropdownMenu}> {this.props.title} </div>
         <ul>
         
         {this.state.displayMenu ? this.state.menus.map((menu, index) => {

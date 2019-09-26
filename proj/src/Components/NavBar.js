@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavBarDemo from './NavBarDemo';
 import '../css/NavBar.css';
 import MenuDrop from './MenuDrop';
 
