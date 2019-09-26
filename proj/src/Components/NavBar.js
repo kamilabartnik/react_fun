@@ -3,7 +3,7 @@ import '../css/NavBar.css';
 import MenuDrop from './MenuDrop';
 
 const menusNav = [
-  {menu:"menuBasic", title:"React Basic"},
+  {menu:"menuBasic", title:"Basic"},
   {menu:"menuReactFun", title:"React Fun"},
   {menu:"menuApi", title:"API Fun"},
   {menu:"menuGames", title:"Games"},

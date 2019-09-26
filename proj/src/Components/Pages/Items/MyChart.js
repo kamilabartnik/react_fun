@@ -8,32 +8,26 @@ class MyChart extends Component {
 
     this.state = {
       options: {
-        chart: {
-          id: "basic-bar"
-        },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         }
       },
-      series: [
-        {
-          name: "The real data",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
-        }
-      ]
-    };
+      series: [{
+        name: 'series-1',
+        data: [30, 40, 25, 50, 49, 21, 70, 51]
+      }, {
+        name: 'series-2',
+        data: [23, 12, 54, 61, 32, 56, 81, 19]
+      }],
+    }
   }
 
   render() {
 
     return (
-      <div className="myLineChart">
-        <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="bar"
-            /> 
-            </div>
+      <div className="area">
+        <Chart options={this.state.options} series={this.state.series} type="area" />
+      </div>
     );
   }
 }

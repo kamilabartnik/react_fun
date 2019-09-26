@@ -21,6 +21,7 @@ const menuReactFun = [
 
 const menuGames = [
   { title: 'Play Stone Paper Scissors', href: '/StonePaperScissors' },
+  { title: 'Tic Tac Toe', href: '/TicTacToe'},
 ]
 
 const menuCSS = [

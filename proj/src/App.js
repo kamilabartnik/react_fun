@@ -11,7 +11,6 @@ import './css/App.css';
 
 //Menu
 import NavBar from './Components/NavBar';
-import MenuDrop from './Components/MenuDrop';
 
 //Pages
 import Table from './Components/Pages/table';
@@ -30,6 +29,7 @@ import ButtonWithStyled from './Components/common/Button';
 import Race from './Components/Pages/Race';
 import ColorWheel from './Components/Pages/ColorWheel';
 import Charts from './Components/Pages/Charts';
+import TicTacToe from './Components/Pages/TicTacToe';
 
 
 class App extends Component {
@@ -57,7 +57,6 @@ class App extends Component {
         <div className="MenuBar">
           
           <NavBar />
-          {/* <MenuDrop /> */}
         </div>
           <div className="Pages">
             <Router>
@@ -171,6 +170,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <Charts />)
+                }}
+              />
+                            <Route
+                path='/TicTacToe'
+                render={() => {
+                  return (
+                    <TicTacToe />)
                 }}
               />
             </Router>

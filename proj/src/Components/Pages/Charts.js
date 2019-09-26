@@ -12,12 +12,13 @@ class Charts extends Component {
       <div className="chartApp">
         <h1 className="info">Charts generated using Apexcharts</h1>
         <div className="row">
-          <div className="myChart">
-            {/* <MyChart /> */}
-          </div>
-          <div className="donutGraph">
+        <div className="donutGraph">
             <Donut />
           </div>
+          <div className="myChart">
+            <MyChart />
+          </div>
+
           <div className="barGraph">
             <BarGraphChart />
           </div>
