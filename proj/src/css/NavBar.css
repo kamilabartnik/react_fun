@@ -1,8 +1,8 @@
 .MenuBlock {
-  width: 900px;
+  max-width: 900px;
+  width: 100vw;
   height: 30px;
   margin: 0px;
-  background: rgb(19, 32, 12, 0.5);
   text-align: center;
 }
 
@@ -15,7 +15,6 @@ ul {
   margin: 0;
   padding: 0;
   top: 35px;
-  /*left: 20vw; */
   width: 180px;
   background-color: rgba(245, 253, 248, 0.925);
   font-weight:bold;
@@ -43,14 +42,17 @@ li:hover {
   float: left;
   font-family: 'Special Elite';
   font-size: 18px;
-  width: 180px;
+  max-width: 180px;
+  width: 18.8vw;
   padding-top: 10px;
+  padding-left: 5px;
+  padding-right:5px;
   background-color: rgba(247, 255, 250, 0.808);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border-radius: 1px;
   border-color: #4CAF50;
-  color: #4CAF50;
+  color: #000;
   letter-spacing: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.082), 0 3px 10px 0 rgba(0, 0, 0, 0.062);
   -webkit-border-radius: 1px;
@@ -58,31 +60,3 @@ li:hover {
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
 }
-
-/* .button:before{
-  content:"";
-  position:absolute;
-  width:0px;
-  height:0px;
-  border: 10px solid;
-  border-color: white transparent transparent transparent;
-  left: 20vw;
-  top:18px;
-} */
-
-/* .menuShow button {
-  min-height: 50vh;
-  position: absolute;
-} */
-
-/* .Nav {
-  float:none;
-} */
-
-/* 
-.MenuDrop {
-  margin: 0px;
-  float: none;
-  box-sizing: border-box;
-  display: block;
-} */

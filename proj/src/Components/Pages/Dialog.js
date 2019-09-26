@@ -26,7 +26,7 @@ class Dialog extends Component{
   render() {
     return(
       <div>
-        <input onChange={this.handleChange} type="number"/>
+        <input onChange={this.handleChange} type="number"/> <br />
         <button onClick={this.handleClick}>Propagate to child</button>
         <p>
         {this.state.forwardValue && <DialogItem value={this.state.forwardValue} />}

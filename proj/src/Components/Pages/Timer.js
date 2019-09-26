@@ -15,7 +15,7 @@ class Timer extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.onButtonClick.bind(this)}>Kliknij</button>
+        <button onClick={this.onButtonClick.bind(this)}>Zniknij</button>
         {this.state.dateVis && <DateComponent />}
       </div>
     );

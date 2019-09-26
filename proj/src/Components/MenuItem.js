@@ -5,11 +5,14 @@ class MenuItem extends Component {
 
   render() {
     return (
-      <li>
+      <div><li>
       <a data-toggle="modal" href={this.props.href}>
           {this.props.title}
       </a>
+      
       </li>
+      </div>
+      
     )
   }
 }
