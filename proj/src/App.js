@@ -56,8 +56,8 @@ class App extends Component {
         <div className="App">
         <div className="MenuBar">
           
-          {/* <NavBar /> */}
-          <MenuDrop />
+          <NavBar />
+          {/* <MenuDrop /> */}
         </div>
           <div className="Pages">
             <Router>

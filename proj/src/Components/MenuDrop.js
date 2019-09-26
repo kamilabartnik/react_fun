@@ -1,13 +1,53 @@
 import React from 'react';
-import '../css/Pages/dropMenu.css';
+import MenuItem from './MenuItem';
+//import '../css/Pages/dropMenu.css';
+
+const menuBasic = [
+
+  { title: 'Random name', href: '/RandomNumber' },
+  { title: 'Few numbers', href: '/EvenNumber' },
+  { title: '"Hello!"', href: '/HelloName' },
+  { title: 'Select a file', href: '/FileSelector' },
+  { title: 'Family Dialog', href: '/Dialog' },
+  { title: 'Timer', href: '/Timer' },
+]
+
+const menuReactFun = [
+  { title: 'Biggest', href: '/Biggest' },
+  { title: 'Do do list', href: '/ToDoList' },
+  { title: 'Calc', href: '/Calc' },
+  { title: 'Styled Button', href: '/BWS' },
+  { title: 'Chart Animation', href: '/Chart'},
+]
+
+const menuGames = [
+  { title: 'Play Stone Paper Scissors', href: '/StonePaperScissors' },
+]
+
+const menuCSS = [
+  { title: 'Race', href: '/Race' },
+  { title: 'Color Wheel', href: './ColorWheel' }
+]
+
+const menuApi = [
+  { title: 'Rick and Morthy', href: '/RickAndMorthy' },
+  { title: 'StarWars', href: '/StarWars' },
+]
+
 
 
 class MenuDrop extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       displayMenu: false,
+      show: false,
+      menus: (this.props.menu === "menuBasic" ? this.menus = menuBasic
+              : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
+              : this.props.menu === "menuGames" ? this.menus = menuGames
+              : this.props.menu === "menuCSS" ? this.menus = menuCSS
+              : this.menus = menuApi )
     };
 
     this.showDropdownMenu = this.showDropdownMenu.bind(this);
@@ -34,41 +74,16 @@ class MenuDrop extends React.Component {
     return (
       <div className="dropdown" >
         <div className="MenuBlock">
-        <div className="button" onClick={this.showDropdownMenu}> My Setting </div>
-
-        {this.state.displayMenu ? (
-          <ul>
-            <li><a className="active" href="#Create Page">Create Page</a></li>
-            <li><a href="#Manage Pages">Manage Pages</a></li>
-            <li><a href="#Create Ads">Create Ads</a></li>
-            <li><a href="#Manage Ads">Manage Ads</a></li>
-            <li><a href="#Activity Logs">Activity Logs</a></li>
-            <li><a href="#Setting">Setting</a></li>
-            <li><a href="#Log Out">Log Out</a></li>
-          </ul>
-        ) :
-          (
-            null
-          )
+        <div className="button" onClick={this.showDropdownMenu}> {this.props.title} </div>
+        <ul>
+        
+        {this.state.displayMenu ? this.state.menus.map((menu, index) => {
+        return <MenuItem key={index} {...menu} /> })
+              
+        :null
         }
-        <div className="button" onClick={this.showDropdownMenu}> My Setting </div>
-
-        {this.state.displayMenu ? (
-          <ul>
-            <li><a className="active" href="#Create Page">Create Page</a></li>
-            <li><a href="#Manage Pages">Manage Pages</a></li>
-            <li><a href="#Create Ads">Create Ads</a></li>
-            <li><a href="#Manage Ads">Manage Ads</a></li>
-            <li><a href="#Activity Logs">Activity Logs</a></li>
-            <li><a href="#Setting">Setting</a></li>
-            <li><a href="#Log Out">Log Out</a></li>
-          </ul>
-        ) :
-          (
-            null
-          )
-        }
-        </div>
+      </ul>
+      </div>
       </div>
 
     );
