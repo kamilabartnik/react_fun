@@ -1,15 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Square extends Component {
-
-  render() {
+function Square(props) {
     return (
-      <button className="square">
-        {this.props.value}
-      </button>
-
+        <button className="square"
+          onClick={props.onClick} >
+          <div className="pSquare">{props.value}</div>
+        </button>
     );
-  }
 }
 
 export default Square;

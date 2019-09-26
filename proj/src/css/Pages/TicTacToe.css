@@ -4,11 +4,26 @@
 
 .board {
   display: inline-block;
-  max-width: 45vw;
-  text-align: center;
+  max-width: 450px;
+  max-height: 450px;
 }
 
 .square {
-  width: 15vw;
-  height: 15vw;
+  width: 18vw;
+  height: 18vw;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 0px;
+}
+
+
+.pSquare {
+  margin-top: -5.5vw;
+  margin-left: 4.5vw;
+  position: absolute;
+  font-size: 15vw;
+}
+
+.tttButton {
+  margin-top: 2vh;
 }
