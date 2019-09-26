@@ -6,7 +6,10 @@ class TicTacToe extends Component {
 
   render() {
     return (
+      <div className="tttGame">
+        <h1>Tic Tac Toe Game</h1>
       <Board />
+      </div>
     );
   }
 }

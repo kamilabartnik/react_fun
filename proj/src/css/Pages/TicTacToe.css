@@ -1,4 +1,14 @@
+.tttGame {
+  text-align: center;
+}
+
+.board {
+  display: inline-block;
+  max-width: 45vw;
+  text-align: center;
+}
+
 .square {
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
 }

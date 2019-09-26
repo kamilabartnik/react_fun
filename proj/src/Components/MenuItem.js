@@ -6,7 +6,7 @@ class MenuItem extends Component {
   render() {
     return (
       <div><li>
-      <a data-toggle="modal" href={this.props.href}>
+      <a className="menuText" data-toggle="modal" href={this.props.href}>
           {this.props.title}
       </a>
       
