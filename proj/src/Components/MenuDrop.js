@@ -3,8 +3,8 @@ import MenuItem from './MenuItem';
 
 const menuBasic = [
 
-  { title: 'Random name', href: '/RandomNumber' },
-  { title: 'Few numbers', href: '/EvenNumber' },
+  // { title: 'Random name', href: '/RandomNumber' },
+  // { title: 'Few numbers', href: '/EvenNumber' },
   { title: '"Hello!"', href: '/HelloName' },
   { title: 'Select a file', href: '/FileSelector' },
   { title: 'Family Dialog', href: '/Dialog' },
@@ -15,7 +15,7 @@ const menuReactFun = [
   { title: 'Biggest', href: '/Biggest' },
   { title: 'Do do list', href: '/ToDoList' },
   { title: 'Calc', href: '/Calc' },
-  { title: 'Styled Button', href: '/BWS' },
+  // { title: 'Styled Button', href: '/BWS' },
   { title: 'Chart Animation', href: '/Chart'},
 ]
 
