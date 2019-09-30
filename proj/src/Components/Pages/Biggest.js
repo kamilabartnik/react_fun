@@ -6,7 +6,8 @@ import '../../css/Pages/biggest.css'
 class Biggest extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: 2, bigNum: 0}
+    this.state = { value: 2};
+    this.bigNum= 0;
     this.table = [];
     this.handleNumber = this.handleNumber.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -17,14 +18,15 @@ class Biggest extends Component {
     this.table = []
   }
 
-  handleInput = e => {
-    console.log(e.target.value);
+  handleInput = (e) => {
+    console.log(e);
+    this.bigNum = e;
   }
 
   render() {
 
     for(let i=0; i< this.state.value; i++) {
-      this.table.push(<div className="forInput" key={i}><BiggestItem handleInput={() => this.handleInput()} type="number" /><br /></div>)
+      this.table.push(<div className="forInput" key={i}><BiggestItem handleInput={(e) => this.handleInput(e)} type="number" /><br /></div>)
     }
     
 
@@ -37,8 +39,7 @@ class Biggest extends Component {
             <span>{this.table}</span>
             : null}
         </div>
-        <p className="pbig">The biggest number: </p>
-          <span></span>
+        <p className="pbig">The biggest number: {this.bigNum}</p>
 
       </div>
     )
