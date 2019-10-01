@@ -7,7 +7,7 @@ function BiggestItem(props) {
     <div>
       <p>Choose number:
         <input className="bigInput" onBlur={(e) => props.handleInput(e.target.value)} type="number" />
-        </p>
+      </p>
     </div>
   )
 

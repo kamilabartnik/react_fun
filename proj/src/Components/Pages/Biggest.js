@@ -7,7 +7,7 @@ class Biggest extends Component {
   constructor(props) {
     super(props);
     this.state = { value: 2};
-    this.bigNum= 0;
+    this.bigNum= null;
     this.table = [];
     this.handleNumber = this.handleNumber.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -19,8 +19,11 @@ class Biggest extends Component {
   }
 
   handleInput = (e) => {
-    console.log(e);
-    this.bigNum = e;
+    if(this.bigNum<e){
+      console.log(e);
+      this.setState({bigNum:e});
+    }
+    console.log(this.bigNum);
   }
 
   render() {
@@ -39,7 +42,9 @@ class Biggest extends Component {
             <span>{this.table}</span>
             : null}
         </div>
-        <p className="pbig">The biggest number: {this.bigNum}</p>
+        <p className="pbig">The biggest number: 
+        {this.bigNum}
+        </p>
 
       </div>
     )
