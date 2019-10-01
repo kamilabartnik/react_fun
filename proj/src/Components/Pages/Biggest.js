@@ -13,30 +13,19 @@ class Biggest extends Component {
   }
 
   handleNumber = (event) => {
-    this.setState({value: event.target.value}, () => console.log(this.state.value));
-    // this.table = []
+    this.setState({value: event.target.value});
+    this.table = [];
   }
 
   handleInput = (e) => {
     if(this.state.bigNum<e){
-      console.log(e);
       this.setState({bigNum:e});
     }
-    console.log(this.bigNum);
   }
 
-  // handleInpNumber = (number) => {
-  //   for(let i=0; i< number; i++) {
-  //     this.table.push(<div className="forInput"><BiggestItem handleInput={(e) => this.handleInput(e)} type="number" /><br /></div>)
-  //   }
-  // }
-
-  handleInpNumber = (number) => {
-    this.table = Array(number).fill(<div className="forInput"><BiggestItem handleInput={(e) => this.handleInput(e)} type="number" /><br /></div>);
-    
+  handleInpNumber = (number, key) => {
+    this.table = Array(Number(number)).fill( <div className="forInput" key={key}><BiggestItem handleInput={(e) => this.handleInput(e)} type="number" min="0" /><br /></div>);
   }
-
-
   
   render() {
     return (
