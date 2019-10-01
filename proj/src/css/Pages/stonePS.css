@@ -30,6 +30,7 @@
 }
 
 .choose div.gameInfo{
+  margin-top: 15px; 
   background: white;
   padding: 20px;
   letter-spacing: 3px;
