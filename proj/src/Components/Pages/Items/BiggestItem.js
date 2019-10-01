@@ -10,7 +10,6 @@ function BiggestItem(props) {
       </p>
     </div>
   )
-
 }
 
 export default BiggestItem;
