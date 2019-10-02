@@ -62,7 +62,7 @@ class App extends Component {
           <div className="Pages">
             <Router>
               <Route
-                path='/StonePaperScissors'
+                path='/react_fun/StonePaperScissors'
                 render={() => {
                   return (
                     <StonePS />)
