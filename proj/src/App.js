@@ -173,7 +173,7 @@ class App extends Component {
                     <Charts />)
                 }}
               />
-                            <Route
+              <Route
                 path='/TicTacToe'
                 render={() => {
                   return (
