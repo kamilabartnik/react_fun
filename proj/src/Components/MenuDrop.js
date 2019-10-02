@@ -17,6 +17,7 @@ const menuReactFun = [
   { title: 'Calc', href: '/Calc' },
   // { title: 'Styled Button', href: '/BWS' },
   { title: 'Chart Animation', href: '/Chart'},
+  {title: 'Search', href: '/Search'},
 ]
 
 const menuGames = [

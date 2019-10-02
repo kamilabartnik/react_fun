@@ -30,6 +30,7 @@ import Race from './Components/Pages/Race';
 import ColorWheel from './Components/Pages/ColorWheel';
 import Charts from './Components/Pages/Charts';
 import TicTacToe from './Components/Pages/TicTacToe';
+import Search from './Components/Pages/Search';
 
 
 class App extends Component {
@@ -177,6 +178,13 @@ class App extends Component {
                 render={() => {
                   return (
                     <TicTacToe />)
+                }}
+              />
+              <Route
+                path='/Search'
+                render={() => {
+                  return (
+                    <Search />)
                 }}
               />
             </Router>

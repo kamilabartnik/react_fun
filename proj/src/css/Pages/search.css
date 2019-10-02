@@ -1,0 +1,12 @@
+.searchList {
+  background: none;
+  right: 40vw;
+  top: 25vh;
+  box-shadow: none;
+  list-style-type: armenian;
+  
+}
+
+.searchList li {
+  border-bottom: 0px;
+}
