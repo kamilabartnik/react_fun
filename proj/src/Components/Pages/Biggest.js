@@ -13,7 +13,7 @@ class Biggest extends Component {
   }
 
   handleNumber = (event) => {
-    this.setState({value: event.target.value});
+    this.setState({value: event.currentTarget.value});
     this.table = [];
   }
 
