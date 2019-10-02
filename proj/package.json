@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kamilabartnik.github.io/react_fun/",
   "name": "exercises",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "mdbreact": "^4.20.0",
     "prop-types": "^15.7.2",
     "rc-menu": "^7.4.28",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-apexcharts": "^1.3.3",
     "react-bootstrap": "^1.0.0-beta.12",
@@ -21,6 +23,8 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
