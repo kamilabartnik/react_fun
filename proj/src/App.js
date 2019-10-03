@@ -62,7 +62,7 @@ class App extends Component {
           <div className="Pages">
             <Router basename="{process.env.PUBLIC_URL}">
               <Route
-                path='/react_fun/'
+                path='/react_fun/SPS'
                 render={() => {
                   return (
                     <StonePS />)
