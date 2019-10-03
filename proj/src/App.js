@@ -62,7 +62,7 @@ class App extends Component {
           <div className="Pages">
             <Router>
               <Route
-                path='/'
+                path='/react_fun/'
                 render={() => {
                   return (
                     <StonePS />)
