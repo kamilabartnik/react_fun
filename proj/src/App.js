@@ -60,7 +60,7 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-            <Router>
+            <Router basename="{process.env.PUBLIC_URL}">
               <Route
                 path='/react_fun/'
                 render={() => {
