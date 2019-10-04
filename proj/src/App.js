@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as HashRouter, Route } from 'react-router-dom';
 // import { ThemeProvider } from 'styled-components';
 
 //themes
@@ -60,9 +60,9 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-            <Router basename="{process.env.PUBLIC_URL}">
-              <Route
-                path='/react_fun/SPS'
+            <HashRouter basename="/react_fun" >
+              <Link
+                to='/SPS'
                 render={() => {
                   return (
                     <StonePS />)
@@ -187,7 +187,7 @@ class App extends Component {
                     <Search />)
                 }}
               />
-            </Router>
+            </HashRouter>
             <div className="ciemno">
               <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>

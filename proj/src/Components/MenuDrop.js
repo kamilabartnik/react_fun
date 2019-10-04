@@ -5,10 +5,10 @@ const menuBasic = [
 
   // { title: 'Random name', href: '/RandomNumber' },
   // { title: 'Few numbers', href: '/EvenNumber' },
-  { title: '"Hello!"', href: '/HelloName' },
-  { title: 'Select a file', href: '/FileSelector' },
-  { title: 'Family Dialog', href: '/Dialog' },
-  { title: 'Timer', href: '/Timer' },
+  { title: '"Hello!"', href: '/HelloName#/' },
+  { title: 'Select a file', href: '/FileSelector#' },
+  { title: 'Family Dialog', href: '/Dialog#' },
+  { title: 'Timer', href: '/Timer#' },
 ]
 
 const menuReactFun = [
@@ -22,7 +22,7 @@ const menuReactFun = [
 
 const menuGames = [
   { title: 'Play Stone Paper Scissors', href: '/react_fun/SPS' },
-  { title: 'Tic Tac Toe', href: '/TicTacToe'},
+  { title: 'Tic Tac Toe', href: '/TicTacToe#/'},
 ]
 
 const menuCSS = [
