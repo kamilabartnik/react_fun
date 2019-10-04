@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter as HashRouter, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { ThemeProvider } from 'styled-components';
 
 //themes
@@ -62,12 +63,9 @@ class App extends Component {
           <div className="Pages">
             <HashRouter basename="/react_fun" >
               <Link
-                to='/SPS'
-                render={() => {
-                  return (
-                    <StonePS />)
-                }}
-              />
+                to='/SPS#/'
+              ><StonePS />
+              </Link>
               <Route
                 path='/Biggest'
                 render={() => {
