@@ -60,7 +60,7 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-            <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
               <Route
                 path='/react_fun/SPS'
                 render={() => {
@@ -187,7 +187,7 @@ class App extends Component {
                     <Search />)
                 }}
               />
-            </Router>
+            </BrowserRouter>
             <div className="ciemno">
               <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>
