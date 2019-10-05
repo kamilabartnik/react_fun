@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as HashRouter, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as BrowserRouter, Route } from 'react-router-dom';
 // import { ThemeProvider } from 'styled-components';
 
 //themes
@@ -61,11 +60,14 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-            <HashRouter basename="/react_fun" >
-              <Link
-                to='/SPS#/'
-              ><StonePS />
-              </Link>
+            <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+              <Route
+                path='/react_fun/SPS'
+                render={() => {
+                  return (
+                    <StonePS />)
+                }}
+              />
               <Route
                 path='/Biggest'
                 render={() => {
@@ -185,7 +187,7 @@ class App extends Component {
                     <Search />)
                 }}
               />
-            </HashRouter>
+            </Router>
             <div className="ciemno">
               <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>
