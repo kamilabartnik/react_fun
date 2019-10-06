@@ -21,7 +21,7 @@ import MenuItem from './MenuItem';
 // ]
 
 const menuGames = [
-  { title: 'Play Stone Paper Scissors', href: '/react_fun/SPS' },
+  { title: 'Play Stone Paper Scissors', href: '/SPS' },
   { title: 'Tic Tac Toe', href: '/TicTacToe'},
 ]
 
