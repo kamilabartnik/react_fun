@@ -64,6 +64,9 @@ class App extends Component {
               <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                 <Route
+                  exact path='/' component={Biggest}
+                />
+                <Route
                   path='/SPS' component={StonePS}
                 />
                 </Switch>
