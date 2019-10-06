@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as BrowserRouter, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { ThemeProvider } from 'styled-components';
 
 //themes
@@ -60,15 +61,14 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
-              <Route
-                path='/react_fun/SPS'
-                render={() => {
-                  return (
-                    <StonePS />)
-                }}
-              />
-              <Route
+              <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <Switch>
+                <Route
+                  path='/SPS' component={StonePS}
+                />
+                </Switch>
+              </BrowserRouter>
+              {/* <Route
                 path='/Biggest'
                 render={() => {
                   return (
@@ -187,7 +187,7 @@ class App extends Component {
                     <Search />)
                 }}
               />
-            </BrowserRouter>
+            </BrowserRouter> */}
             <div className="ciemno">
               <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>

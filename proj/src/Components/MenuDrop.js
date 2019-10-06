@@ -1,39 +1,39 @@
 import React from 'react';
 import MenuItem from './MenuItem';
 
-const menuBasic = [
+// const menuBasic = [
 
-  // { title: 'Random name', href: '/RandomNumber' },
-  // { title: 'Few numbers', href: '/EvenNumber' },
-  { title: '"Hello!"', href: '/HelloName#/' },
-  { title: 'Select a file', href: '/FileSelector#' },
-  { title: 'Family Dialog', href: '/Dialog#' },
-  { title: 'Timer', href: '/Timer#' },
-]
+//   // { title: 'Random name', href: '/RandomNumber' },
+//   // { title: 'Few numbers', href: '/EvenNumber' },
+//   { title: '"Hello!"', href: '/HelloName#/' },
+//   { title: 'Select a file', href: '/FileSelector#' },
+//   { title: 'Family Dialog', href: '/Dialog#' },
+//   { title: 'Timer', href: '/Timer#' },
+// ]
 
-const menuReactFun = [
-  { title: 'Biggest', href: '/Biggest' },
-  { title: 'Do do list', href: '/ToDoList' },
-  { title: 'Calc', href: '/Calc' },
-  // { title: 'Styled Button', href: '/BWS' },
-  { title: 'Chart Animation', href: '/Chart'},
-  {title: 'Search', href: '/Search'},
-]
+// const menuReactFun = [
+//   { title: 'Biggest', href: '/Biggest' },
+//   { title: 'Do do list', href: '/ToDoList' },
+//   { title: 'Calc', href: '/Calc' },
+//   // { title: 'Styled Button', href: '/BWS' },
+//   { title: 'Chart Animation', href: '/Chart'},
+//   {title: 'Search', href: '/Search'},
+// ]
 
 const menuGames = [
   { title: 'Play Stone Paper Scissors', href: '/react_fun/SPS' },
-  { title: 'Tic Tac Toe', href: '/TicTacToe#/'},
+  { title: 'Tic Tac Toe', href: '/TicTacToe'},
 ]
 
-const menuCSS = [
-  { title: 'Race', href: '/Race' },
-  { title: 'Color Wheel', href: './ColorWheel' }
-]
+// const menuCSS = [
+//   { title: 'Race', href: '/Race' },
+//   { title: 'Color Wheel', href: './ColorWheel' }
+// ]
 
-const menuApi = [
-  { title: 'Rick and Morthy', href: '/RickAndMorthy' },
-  { title: 'StarWars', href: '/StarWars' },
-]
+// const menuApi = [
+//   { title: 'Rick and Morthy', href: '/RickAndMorthy' },
+//   { title: 'StarWars', href: '/StarWars' },
+// ]
 
 
 
@@ -44,11 +44,14 @@ class MenuDrop extends React.Component {
     this.state = {
       displayMenu: false,
       show: false,
-      menus: (this.props.menu === "menuBasic" ? this.menus = menuBasic
-              : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
-              : this.props.menu === "menuGames" ? this.menus = menuGames
-              : this.props.menu === "menuCSS" ? this.menus = menuCSS
-              : this.menus = menuApi )
+      menus: (
+        // this.props.menu === "menuBasic" ? this.menus = menuBasic
+              // : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
+              this.props.menu === "menuGames" ? this.menus = menuGames
+              // : this.props.menu === "menuCSS" ? this.menus = menuCSS
+              // : this.menus = menuApi 
+              :null
+              )
     };
 
     this.showDropdownMenu = this.showDropdownMenu.bind(this);
