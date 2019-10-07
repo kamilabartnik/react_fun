@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Link } from "react-router-dom";
 // import { ThemeProvider } from 'styled-components';
 
 //themes
@@ -61,16 +62,18 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-              <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <Switch>
-                <Route
-                  exact path='/' component={Biggest}
-                />
-                <Route
-                  path='/SPS' component={StonePS}
-                />
-                </Switch>
-              </BrowserRouter>
+              <HashRouter basename={process.env.PUBLIC_URL}>
+              <div>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/SPS">About</Link></li>
+          </ul>
+
+          <hr />
+                <Route exact path='/' component={Name} />
+                <Route path='/SPS' component={StonePS} />
+                </div>
+              </HashRouter>
               {/* <Route
                 path='/Biggest'
                 render={() => {
