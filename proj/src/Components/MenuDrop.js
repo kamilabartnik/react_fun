@@ -1,39 +1,39 @@
 import React from 'react';
 import MenuItem from './MenuItem';
 
-// const menuBasic = [
+const menuBasic = [
 
-//   // { title: 'Random name', href: '/RandomNumber' },
-//   // { title: 'Few numbers', href: '/EvenNumber' },
-//   { title: '"Hello!"', href: '/HelloName#/' },
-//   { title: 'Select a file', href: '/FileSelector#' },
-//   { title: 'Family Dialog', href: '/Dialog#' },
-//   { title: 'Timer', href: '/Timer#' },
-// ]
+  // { title: 'Random name', href: '/react_fun/#/RandomNumber' },
+  // { title: 'Few numbers', href: '/react_fun/#/EvenNumber' },
+  { title: '"Hello!"', href: '/react_fun/#/HelloName#/' },
+  { title: 'Select a file', href: '/react_fun/#/FileSelector#' },
+  { title: 'Family Dialog', href: '/react_fun/#/Dialog#' },
+  { title: 'Timer', href: '/react_fun/#/Timer#' },
+]
 
-// const menuReactFun = [
-//   { title: 'Biggest', href: '/Biggest' },
-//   { title: 'Do do list', href: '/ToDoList' },
-//   { title: 'Calc', href: '/Calc' },
-//   // { title: 'Styled Button', href: '/BWS' },
-//   { title: 'Chart Animation', href: '/Chart'},
-//   {title: 'Search', href: '/Search'},
-// ]
+const menuReactFun = [
+  { title: 'Biggest', href: '/react_fun/#/Biggest' },
+  { title: 'Do do list', href: '/react_fun/#/ToDoList' },
+  { title: 'Calc', href: '/react_fun/#/Calc' },
+// { title: 'Styled Button', href: '/react_fun/#BWS' },
+  { title: 'Chart Animation', href: '/react_fun/#/Chart'},
+  {title: 'Search', href: '/react_fun/#/Search'},
+]
 
 const menuGames = [
   { title: 'Play Stone Paper Scissors', href: '/react_fun/#/SPS' },
-  { title: 'Tic Tac Toe', href: '/TicTacToe'},
+  { title: 'Tic Tac Toe', href: '/react_fun/#/TicTacToe'},
 ]
 
-// const menuCSS = [
-//   { title: 'Race', href: '/Race' },
-//   { title: 'Color Wheel', href: './ColorWheel' }
-// ]
+const menuCSS = [
+  { title: 'Race', href: '/react_fun/#/Race' },
+  { title: 'Color Wheel', href: '/react_fun/#/ColorWheel' }
+]
 
-// const menuApi = [
-//   { title: 'Rick and Morthy', href: '/RickAndMorthy' },
-//   { title: 'StarWars', href: '/StarWars' },
-// ]
+const menuApi = [
+  { title: 'Rick and Morthy', href: '/react_fun/#/RickAndMorthy' },
+  { title: 'StarWars', href: '/react_fun/#/StarWars' },
+]
 
 
 
@@ -45,11 +45,11 @@ class MenuDrop extends React.Component {
       displayMenu: false,
       show: false,
       menus: (
-        // this.props.menu === "menuBasic" ? this.menus = menuBasic
-              // : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
-              this.props.menu === "menuGames" ? this.menus = menuGames
-              // : this.props.menu === "menuCSS" ? this.menus = menuCSS
-              // : this.menus = menuApi 
+        this.props.menu === "menuBasic" ? this.menus = menuBasic
+              : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
+              : this.props.menu === "menuGames" ? this.menus = menuGames
+              : this.props.menu === "menuCSS" ? this.menus = menuCSS
+              : this.menus = menuApi 
               :null
               )
     };
