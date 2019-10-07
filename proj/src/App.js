@@ -62,7 +62,7 @@ class App extends Component {
           <NavBar />
         </div>
           <div className="Pages">
-              <HashRouter basename={process.env.PUBLIC_URL}>
+              <HashRouter basename="/">
               <div>
           <ul>
             <li><Link to="/">Home</Link></li>
