@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { HashRouter, Route, Link } from "react-router-dom";
-// import { ThemeProvider } from 'styled-components';
-
-//themes
-// import LightTheme from './Components/common/theme/light';
-// import DarkTheme from './Components/common/theme/dark';
+import { HashRouter, Route } from "react-router-dom";
 
 //CSS
 import './css/App.css';
@@ -27,7 +20,6 @@ import RickAndMorthy from './Components/Pages/RickAndMorthyCharactersCards';
 import StarWars from './Components/Pages/StarWars';
 import ToDoList from './Components/Pages/ToDoList';
 import Calc from './Components/Pages/Calc';
-import ButtonWithStyled from './Components/common/Button';
 import Race from './Components/Pages/Race';
 import ColorWheel from './Components/Pages/ColorWheel';
 import Charts from './Components/Pages/Charts';
@@ -52,7 +44,6 @@ class App extends Component {
 
   render() {
     return (
-      // <ThemeProvider theme={LightTheme} >
 
       <div className={this.state.dark ? 'Dark' : 'Light'}>
 
@@ -77,7 +68,6 @@ class App extends Component {
                 <Route path='/StarWars' component={StarWars} />
                 <Route path='/ToDoList' component={ToDoList} />
                 <Route path='/Calc' component={Calc} />
-                <Route path='/BWS' component={ButtonWithStyled} />
                 <Route path='/Race' component={Race} />
                 <Route path='/ColorWheel' component={ColorWheel} />
                 <Route path='/Chart' component={Charts} />
@@ -91,7 +81,6 @@ class App extends Component {
           </div>
         </div>
       </div>
-      // </ThemeProvider>
     );
   }
 }
