@@ -10,7 +10,7 @@ import NavBar from './Components/NavBar';
 //Pages
 import Table from './Components/Pages/table';
 import Name from './Components/Pages/name';
-import Losowarka from './Components/Pages/losowarka';
+import Randomizer from './Components/Pages/Randomizer';
 import StonePS from './Components/Pages/StonePS';
 import FileSelector from './Components/Pages/FileSelector';
 import Dialog from './Components/Pages/Dialog';
@@ -58,7 +58,7 @@ class App extends Component {
                 <Route exact path='/' component={Name} />
                 <Route path='/SPS' component={StonePS} />
                 <Route path='/Biggest' component={Biggest} />
-                <Route path='/RandomNumber' component={Losowarka} />
+                <Route path='/RandomNumber' component={Randomizer} />
                 <Route path='/Dialog' component={Dialog} />
                 <Route path='/HelloName' component={Name} />
                 <Route path='/EvenNumber' component={Table} />
@@ -75,7 +75,7 @@ class App extends Component {
                 <Route path='/Search' component={Search} />
               </div>
             </HashRouter>
-            <div className="ciemno">
+            <div className="darkness">
               <button onClick={this.handleDarkOn}>{this.state.dark ? 'Light' : 'Dark'}</button>
             </div>
           </div>

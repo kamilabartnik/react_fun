@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 const students = ["John", "Bill", "Emma", "Stella", "Rob"]
 let random = (Math.round(Math.random() * 4));
 
-class Losowarka extends Component{
+class Randomizer extends Component{
 
   render() {
     return (
@@ -14,4 +14,4 @@ class Losowarka extends Component{
   }
 }
 
-export default Losowarka;
+export default Randomizer;
