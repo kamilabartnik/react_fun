@@ -16,7 +16,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  top: 40px;
+  top: 8.5vh;
   width: 180px;
   background-color: rgba(245, 253, 248, 0.925);
   font-weight:bold;
@@ -41,7 +41,7 @@
   color: white;
 }
 .buttonDrop{
-  height: 5vh;
+  height: 6vh;
   max-height: 30px;
   float: left;
   font-family: 'Special Elite';

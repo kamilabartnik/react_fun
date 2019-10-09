@@ -4,26 +4,32 @@
 
 .board {
   display: inline-block;
+  width:54vw;
+  width:54vw;
   max-width: 450px;
   max-height: 450px;
 }
 
+.board-row {
+  max-height: 150px;
+}
+
 .square {
+  vertical-align: middle;
   width: 18vw;
   height: 18vw;
   max-width: 150px;
   max-height: 150px;
-  padding: 0px;
-}
-
-
-.pSquare {
-  margin-top: -5.5vw;
-  margin-left: 4vw;
-  position: absolute;
-  font-size: 15vw;
+  font-size: 15vh;
+  padding-top: 2vh;
 }
 
 .tttButton {
   margin-top: 2vh;
+}
+
+@media screen {
+  .square {
+     font-size: 36px;
+  }
 }
