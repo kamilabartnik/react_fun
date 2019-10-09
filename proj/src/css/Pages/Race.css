@@ -42,10 +42,5 @@
                     top 73% left 72%,
                     top 95% left 83%,
                     top 73% left 380%,
-                    top 0% left -1000%;
-}
-
-.credits {
-  position: fixed;
-  bottom: 0px;
+                    top 0% left -300%;
 }

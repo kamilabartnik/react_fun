@@ -30,6 +30,7 @@ class Biggest extends Component {
   render() {
     return (
       <div>
+        <h2>Tu jest jeszcze "trochę" roboty.<br /> W tym momencie można modyfikować liczbę inputów <br /> i natychmiast z puli uzupełnionych wyświetla się najwyższa</h2>
         <p className="pbig">How many numbers do you want to pass?</p> 
         <input className="inputNumbers" type="number" min="2" max="6" onBlur={this.handleNumber} defaultValue={this.state.value} />
         <button onClick={this.handleInpNumber(this.state.value)}>ok</button>

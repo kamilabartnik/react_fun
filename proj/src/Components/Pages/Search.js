@@ -43,13 +43,16 @@ class Search extends Component {
   render() {
     return (
       <div className="search">
-
-        <input onInput={this.filterUsers} />
-        <UsersList users={this.state.filteredUsers} />
-
+        <h2>Przy wpisywaniu znaków do inputa<br /> zostają jedynie posiadające te znaki imiona</h2>
+        <div>
+          <input onInput={this.filterUsers} />
+        </div>
+        <div className="searchUser">
+          <UsersList users={this.state.filteredUsers} />
+        </div>
       </div>
     )
   }
 }
-    
+
 export default Search;

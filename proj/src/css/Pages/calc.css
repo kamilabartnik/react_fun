@@ -37,9 +37,9 @@ button.calc-button {
 }
 
 .floaty-last {
-   position: absolute;
-   right: 50px;
-   z-index: 99;
-   top: 10px;
-   color: #aaa;
+  position: absolute;
+  top: 15vh;
+  right: 25vw;
+  z-index: 99;
+  color: #4CAF50;;
 }

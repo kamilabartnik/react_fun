@@ -13,6 +13,8 @@ class ToDoList extends Component{
     return(
       <div>
         <ToDoListItem title='my stuff' tasks={this.myTasks} />
+        <h2>Mamy możliwość dopisywania kolejnych pozycji oraz skreślania ich</h2>
+        
       </div>
 
     )

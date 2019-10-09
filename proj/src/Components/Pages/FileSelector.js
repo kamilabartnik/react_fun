@@ -21,6 +21,9 @@ class FileSelector extends Component {
           Upload post Image
         </button>
         <input type="file" style={{ display: 'none' }} className="MyFile" />
+        <div>
+        <h2> W tym momencie jest to jedynie możliwość <br /> wyświetlenia okna wyboru plików</h2>
+        </div>
       </div>
     )
   }

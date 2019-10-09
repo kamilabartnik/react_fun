@@ -26,6 +26,7 @@ class Dialog extends Component{
   render() {
     return(
       <div>
+        <h2>Proste przekazywanie danych rodzic - dziecko<br /> i manipulacja liczbą z poziomu dziecka</h2>
         <input onChange={this.handleChange} type="number"/> <br />
         <button onClick={this.handleClick}>Propagate to child</button>
         <p>

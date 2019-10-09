@@ -1,10 +1,22 @@
+.search {
+  max-width: 900px;
+  height: 80vh;
+  text-align: center;
+  margin: auto;
+}
+
+.searchUser {
+  max-width: 180px;
+  text-align: center;
+  margin: auto;
+}
+
 .searchList {
+  font-size: 20px;
   background: none;
-  right: 36vw;
-  top: 25vh;
   box-shadow: none;
   list-style-type: armenian;
-  z-index: 4;
+  z-index: 1;
 }
 
 .searchList li {

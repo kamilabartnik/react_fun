@@ -12,7 +12,7 @@
   float: left;
 }
 
-ul {
+.Nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,20 +29,20 @@ ul {
   color: #000;
   text-decoration: none;
 }
-li {
+.menuText li {
   padding: 8px 16px;
   border-bottom: 1px solid #e5e5e5;
 }
-li:last-child {
+.menuText li:last-child {
   border-bottom: none;
 }
-li:hover {
+.menuText li:hover {
   background-color: #e5e5e5;
   color: white;
 }
 .buttonDrop{
   height: 5vh;
-  max-height: 40px;
+  max-height: 30px;
   float: left;
   font-family: 'Special Elite';
   font-size: 19px;
