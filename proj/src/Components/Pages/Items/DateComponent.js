@@ -24,7 +24,7 @@ class DateComponent extends Component {
   }
 
   render() {
-    const dateStr = this.state.date.toString();
+    const dateStr = "  Time now: "+this.state.date.getHours()+":"+this.state.date.getMinutes()+":"+this.state.date.getSeconds()+"  "+this.state.date.getDate()+"/"+this.state.date.getMonth()+"/"+this.state.date.getFullYear();
     return <time>{dateStr}</time>;
   }
 }
