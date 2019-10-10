@@ -49,6 +49,10 @@
   top: 270px;
   left: 30px;
   transition: all 900ms ease;
+  -webkit-transition: all 900ms ease;
+  -moz-transition: all 900ms ease;
+  -ms-transition: all 900ms ease;
+  -o-transition: all 900ms ease;
 }
 
 .switch {

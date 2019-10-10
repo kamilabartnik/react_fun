@@ -10,20 +10,13 @@
   text-transform: uppercase;
 }
 
-.choose button {
-  margin: 10px;
-}
-
 .choose img, .choose button {
   padding: 0px;
-  width: 25vw;
-  height: 25vw;
-  max-width: 230px;
-  max-height: 230px;
-}
-
-.choose button:hover {
-  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 7px;
 }
 
 .choose img {
@@ -32,14 +25,14 @@
 }
 
 .choose img:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
   border-radius: 50%;
-  transition: 900ms;
-  -webkit-transition: 900ms;
-  -moz-transition: 900ms;
-  -ms-transition: 900ms;
-  -o-transition: 900ms;
+  transition: all 900ms ease;
+  -webkit-transition: all 900ms ease;
+  -moz-transition: all 900ms ease;
+  -ms-transition: all 900ms ease;
+  -o-transition: all 900ms ease;
 }
 
 .choose div.gameInfo{

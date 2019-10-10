@@ -38,15 +38,9 @@ class StonePS extends Component {
       <div className="stoneDiv">
         <div className="choose">
           <div className="img">
-            <button onClick={() => this.game(0)}>
-              <img src={paper} alt="Paper" />
-            </button>
-            <button onClick={() => this.game(1)}>
-              <img src={scissors} alt="Scissors" />
-            </button>
-            <button onClick={() => this.game(2)}>
-              <img src={stone} alt="Stone" />
-            </button>
+              <img onClick={() => this.game(0)} src={paper} alt="Paper" />
+              <img onClick={() => this.game(1)} src={scissors} alt="Scissors" />
+              <img onClick={() => this.game(2)} src={stone} alt="Stone" />
           </div>
           <div className="gameInfo">
             <div className="oponent"> Oponent played: {this.state.value} </div>
