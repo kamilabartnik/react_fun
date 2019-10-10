@@ -1,3 +1,9 @@
+.img {
+  max-height: 250px;
+  display: inline-block;
+  margin: auto;
+}
+
 .choose div {
   text-align: center;
   padding: 10px 20px;
@@ -10,8 +16,10 @@
 
 .choose img, .choose button {
   padding: 0px;
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
+  max-width: 230px;
+  max-height: 230px;
 }
 
 .choose button:hover {
@@ -27,6 +35,11 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   border-radius: 50%;
+  transition: 900ms;
+  -webkit-transition: 900ms;
+  -moz-transition: 900ms;
+  -ms-transition: 900ms;
+  -o-transition: 900ms;
 }
 
 .choose div.gameInfo{
@@ -59,8 +72,9 @@
 }
 
 .win, .lost {
-  width: 40vw;
-  float: left;
+  width: 30vw;
+  max-width: 300px;
+  display: inline-block;
   margin: auto auto;
-  padding: 10px;
+  padding: 3vw;
 }

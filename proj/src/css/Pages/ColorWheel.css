@@ -1,7 +1,7 @@
 .circle {
   width: 30vh;
   height: 30vh;
-  background: url(../../img/002-van.png) no-repeat; 
+  background: url(../../img/002-van.png) no-repeat;
   background-position: 10px 10px;
   background-size: auto 90%;
   border-radius: 50%;
@@ -12,6 +12,10 @@
   margin: auto auto;
   transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
   z-index: 1;
+  -webkit-transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
+  -moz-transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
+  -ms-transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
+  -o-transition: all 9000ms cubic-bezier(0.44,-0.37, 1, 1.38);
 }
 
 .circle:hover {
