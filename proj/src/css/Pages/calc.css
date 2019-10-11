@@ -36,10 +36,12 @@ button.calc-button {
    font-size: 32px;
 }
 
+.inputCalc {
+  clear: both;
+}
+
 .floaty-last {
-  position: absolute;
-  top: 15vh;
-  right: 25vw;
-  z-index: 99;
-  color: #4CAF50;;
+  height: 6vh;
+  z-index: 2;
+  color: #4CAF50;
 }

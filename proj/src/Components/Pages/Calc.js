@@ -69,7 +69,7 @@ class Calc extends Component {
                 :null }
                 
                 
-                <div>
+                <div className="inputCalc">
                     <input className="result" type="text" value={this.state.current} />
                 </div>
 
