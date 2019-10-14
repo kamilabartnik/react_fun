@@ -36,11 +36,11 @@
   width: 100px
 }
 
-.dark, .switch, .cirle, .wheel-btn {
+.dark-circle, .switch, .cirle, .wheel-btn {
   position: absolute;
 } 
 
-.dark {
+.dark-circle {
   width: 30vw;
   height: 30vh;
   background-color: transparent;

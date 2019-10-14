@@ -16,7 +16,7 @@ class ColorWheel extends Component {
     return (
       <div>
         <div className="switch"></div>
-        <div className="dark"></div>
+        <div className="dark-circle"></div>
         <div className={this.state.active ? 'circle' : 'circle active'}></div>
         <button className="wheel-btn" onClick={this.handleWheel}> Wheel the wheel </button>
 

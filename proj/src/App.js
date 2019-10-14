@@ -49,7 +49,6 @@ class App extends Component {
 
         <div className="app">
           <div className="menu-bar">
-
             <NavBar />
           </div>
           <div className="pages">

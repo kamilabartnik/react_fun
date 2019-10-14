@@ -12,10 +12,10 @@ body {
 }
 
 .dark {
-  text-align: center;
   background:  rgb(16, 37, 17);
+  /* text-align: center;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 .light {
@@ -23,7 +23,6 @@ body {
 }
 
 .app {
-  margin: 0px 0px 0px 0px;
   font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
   width: 100vw;
   max-width: 900px;
