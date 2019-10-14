@@ -32,10 +32,16 @@ const menuCSS = [
 
 const menuApi = [
   { title: 'Rick and Morthy', href: '/react_fun/#/rick-and-morthy' },
-  { title: 'StarWars', href: '/react_fun/#/star-wars' },
+  // { title: 'StarWars', href: '/react_fun/#/star-wars' },
 ]
 
-
+const mapToMenu = {
+  "menuBasic": menuBasic,
+  "menuReactFun": menuReactFun,
+  "menuGames": menuGames,
+  "menuCSS": menuCSS,
+  "menuApi": menuApi,
+}
 
 class MenuDrop extends React.Component {
   constructor(props) {
@@ -44,14 +50,6 @@ class MenuDrop extends React.Component {
     this.state = {
       displayMenu: false,
       show: false,
-      menus: (
-        this.props.menu === "menuBasic" ? this.menus = menuBasic
-              : this.props.menu === "menuReactFun" ? this.menus = menuReactFun
-              : this.props.menu === "menuGames" ? this.menus = menuGames
-              : this.props.menu === "menuCSS" ? this.menus = menuCSS
-              : this.menus = menuApi 
-              : null
-              )
     };
 
     this.showDropdownMenu = this.showDropdownMenu.bind(this);
@@ -81,7 +79,7 @@ class MenuDrop extends React.Component {
         <div className="button-drop" onClick={this.showDropdownMenu}> {this.props.title} </div>
         <ul>
         
-        {this.state.displayMenu ? this.state.menus.map((menu, index) => {
+        {this.state.displayMenu ? mapToMenu[this.props.menu].map((menu, index) => {
         return <MenuItem key={index} {...menu} /> })
               
         :null

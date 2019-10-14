@@ -5,10 +5,9 @@ import MenuDrop from './MenuDrop';
 const menusNav = [
   {menu:"menuBasic", title:"Basic"},
   {menu:"menuReactFun", title:"React Fun"},
-  {menu:"menuApi", title:"API Fun"},
   {menu:"menuGames", title:"Games"},
   {menu:"menuCSS", title:"CSS Fun"},
-
+  {menu:"menuApi", title:"API Fun"},
 ]
 
 class NavBar extends Component {

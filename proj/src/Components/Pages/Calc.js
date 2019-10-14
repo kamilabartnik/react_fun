@@ -64,10 +64,7 @@ class Calc extends Component {
 
         return (
             <div className="application">
-                {this.state.previous.length > 0 ? 
                 <div className="floaty-last">{this.state.previous[this.state.previous.length-1]}</div> 
-                :null }
-                
                 
                 <div className="input-calc">
                     <input className="result" type="text" value={this.state.current} />

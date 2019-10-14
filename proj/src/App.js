@@ -64,7 +64,7 @@ class App extends Component {
                 <Route path='/file-selector' component={FileSelector} />
                 <Route path='/timer' component={Timer} />
                 <Route path='/rick-and-morthy' component={RickAndMorthy} />
-                <Route path='/star-wars' component={StarWars} />
+                {/* <Route path='/star-wars' component={StarWars} /> */}
                 <Route path='/to-do-list' component={ToDoList} />
                 <Route path='/calc' component={Calc} />
                 <Route path='/race' component={Race} />
