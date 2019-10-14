@@ -25,8 +25,6 @@ class BarGraphChart extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
           <div className="mixed-chart">
             <Chart
               options={this.state.options}
@@ -34,8 +32,6 @@ class BarGraphChart extends Component {
               type="bar"
             />
           </div>
-        </div>
-      </div>
     );
   }
 }

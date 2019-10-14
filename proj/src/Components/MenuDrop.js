@@ -5,34 +5,34 @@ const menuBasic = [
 
   // { title: 'Random name', href: '/react_fun/#/RandomNumber' },
   // { title: 'Few numbers', href: '/react_fun/#/EvenNumber' },
-  { title: '"Hello!"', href: '/react_fun/#/HelloName#/' },
-  { title: 'Select a file', href: '/react_fun/#/FileSelector#' },
-  { title: 'Family Dialog', href: '/react_fun/#/Dialog#' },
-  { title: 'Timer', href: '/react_fun/#/Timer#' },
+  { title: '"Hello!"', href: '/react_fun/#/hello-name#/' },
+  { title: 'Select a file', href: '/react_fun/#/file-selector#' },
+  { title: 'Family Dialog', href: '/react_fun/#/dialog#' },
+  { title: 'Timer', href: '/react_fun/#/timer#' },
 ]
 
 const menuReactFun = [
-  { title: 'Biggest', href: '/react_fun/#/Biggest' },
-  { title: 'Do do list', href: '/react_fun/#/ToDoList' },
-  { title: 'Calc', href: '/react_fun/#/Calc' },
+  { title: 'Biggest', href: '/react_fun/#/biggest' },
+  { title: 'Do do list', href: '/react_fun/#/to-do-list' },
+  { title: 'Calc', href: '/react_fun/#/calc' },
 // { title: 'Styled Button', href: '/react_fun/#BWS' },
-  { title: 'Chart Animation', href: '/react_fun/#/Chart'},
-  {title: 'Search', href: '/react_fun/#/Search'},
+  { title: 'Chart Animation', href: '/react_fun/#/chart'},
+  {title: 'Search', href: '/react_fun/#/search'},
 ]
 
 const menuGames = [
-  { title: 'Play Stone Paper Scissors', href: '/react_fun/#/SPS' },
-  { title: 'Tic Tac Toe', href: '/react_fun/#/TicTacToe'},
+  { title: 'Play Stone Paper Scissors', href: '/react_fun/#/sps' },
+  { title: 'Tic Tac Toe', href: '/react_fun/#/tic-tac-toe'},
 ]
 
 const menuCSS = [
-  { title: 'Race', href: '/react_fun/#/Race' },
-  { title: 'Color Wheel', href: '/react_fun/#/ColorWheel' }
+  { title: 'Race', href: '/react_fun/#/race' },
+  { title: 'Color Wheel', href: '/react_fun/#/color-wheel' }
 ]
 
 const menuApi = [
-  { title: 'Rick and Morthy', href: '/react_fun/#/RickAndMorthy' },
-  { title: 'StarWars', href: '/react_fun/#/StarWars' },
+  { title: 'Rick and Morthy', href: '/react_fun/#/rick-and-morthy' },
+  { title: 'StarWars', href: '/react_fun/#/star-wars' },
 ]
 
 

@@ -23,7 +23,7 @@ class LineChart extends Component {
   render() {
 
     return (
-      <div className="my-line-chart">
+      <div className="line-chart">
         <Chart type='line' options={this.state.options} series={this.state.series} />
       </div>
     );

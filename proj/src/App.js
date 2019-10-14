@@ -55,23 +55,23 @@ class App extends Component {
             <HashRouter basename="/">
               <div>
                 <Route exact path='/' component={Name} />
-                <Route path='/SPS' component={StonePS} />
-                <Route path='/Biggest' component={Biggest} />
-                <Route path='/RandomNumber' component={Randomizer} />
-                <Route path='/Dialog' component={Dialog} />
-                <Route path='/HelloName' component={Name} />
-                <Route path='/EvenNumber' component={Table} />
-                <Route path='/FileSelector' component={FileSelector} />
-                <Route path='/Timer' component={Timer} />
-                <Route path='/RickAndMorthy' component={RickAndMorthy} />
-                <Route path='/StarWars' component={StarWars} />
-                <Route path='/ToDoList' component={ToDoList} />
-                <Route path='/Calc' component={Calc} />
-                <Route path='/Race' component={Race} />
-                <Route path='/ColorWheel' component={ColorWheel} />
-                <Route path='/Chart' component={Charts} />
-                <Route path='/TicTacToe' component={TicTacToe} />
-                <Route path='/Search' component={Search} />
+                <Route path='/sps' component={StonePS} />
+                <Route path='/biggest' component={Biggest} />
+                <Route path='/random-number' component={Randomizer} />
+                <Route path='/dialog' component={Dialog} />
+                <Route path='/hello-name' component={Name} />
+                <Route path='/even-number' component={Table} />
+                <Route path='/file-selector' component={FileSelector} />
+                <Route path='/timer' component={Timer} />
+                <Route path='/rick-and-morthy' component={RickAndMorthy} />
+                <Route path='/star-wars' component={StarWars} />
+                <Route path='/to-do-list' component={ToDoList} />
+                <Route path='/calc' component={Calc} />
+                <Route path='/race' component={Race} />
+                <Route path='/color-wheel' component={ColorWheel} />
+                <Route path='/chart' component={Charts} />
+                <Route path='/tic-tac-toe' component={TicTacToe} />
+                <Route path='/search' component={Search} />
               </div>
             </HashRouter>
             <div className="darkness">
