@@ -1,4 +1,4 @@
-.MenuBlock {
+.menu-block {
   max-width: 900px;
   width: 100vw;
   height: 8vh;
@@ -12,7 +12,7 @@
   float: left;
 }
 
-.Nav ul {
+.nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,18 +28,18 @@
   color: #000;
   text-decoration: none;
 }
-.menuText li {
+.menu-text li {
   padding: 8px 16px;
   border-bottom: 1px solid #e5e5e5;
 }
-.menuText li:last-child {
+.menu-text li:last-child {
   border-bottom: none;
 }
-.menuText li:hover {
+.menu-text li:hover {
   background-color: #e5e5e5;
   color: white;
 }
-.buttonDrop {
+.button-drop {
   height: 30px;
   float: left;
   font-family: 'Special Elite';
@@ -61,26 +61,16 @@
   -o-border-radius: 1px;
 }
 
-.buttonDrop:hover {
+.button-drop:hover {
   background-color: #e5e5e5;
 }
 
 @media only screen and (max-width: 768px) {
-  .buttonDrop{
+  .button-drop{
     height: 6vh;
     width: 33vw;
   }
-  .Nav ul {
+  .nav ul {
     top: 7.5vh;
   }
 }
-/* 
-@media only screen and (max-width: 320px) {
-  .buttonDrop{
-    height: 6vh;
-    width: 33vw;
-  }
-  .Nav ul {
-    top: 7.5vh;
-  } 
-}*/

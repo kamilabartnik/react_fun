@@ -1,4 +1,4 @@
-.chartApp {
+.chart-app {
   width: 100vw;
   max-width: 800px;
   text-align: center;
@@ -9,7 +9,7 @@
   margin-bottom: 40px;
 }
 
-.lineGraph, .donutGraph, .barGraph, .myChart {
+.line-graph, .donut-graph, .bar-graph, .my-chart {
   margin-bottom: 40px;
   max-width: 800px;
   width: 70vw;

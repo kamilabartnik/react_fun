@@ -35,7 +35,7 @@
   -o-transition: all 900ms ease;
 }
 
-.choose div.gameInfo{
+.choose div.game-info{
   margin-top: 15px; 
   background: white;
   padding: 20px;
@@ -58,7 +58,7 @@
   color: white;
 }
 
-.sumResults {
+.sum-results {
   text-align: center;
   height: 30px;
   margin-left: 0px;

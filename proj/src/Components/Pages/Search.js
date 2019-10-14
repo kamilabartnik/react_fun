@@ -1,20 +1,7 @@
 import React, { Component } from "react";
 import '../../css/Pages/search.css';
+import UsersList from './Items/UserList';
 
-
-const UsersList = ({ users }) => {
-  if (users.length > 0) {
-    return (
-      <ul className="searchList">
-        {users.map(user => <li key={user}>{user}</li>)}
-      </ul>
-    );
-  }
-
-  return (
-    <p>No results!</p>
-  );
-};
 
 const allUsers = ['Michal', 'Kasia', 'Jacek', 'Marta', 'Tomek', 'Ania'];
 
@@ -47,7 +34,7 @@ class Search extends Component {
         <div>
           <input onInput={this.filterUsers} />
         </div>
-        <div className="searchUser">
+        <div className="search-user">
           <UsersList users={this.state.filteredUsers} />
         </div>
       </div>

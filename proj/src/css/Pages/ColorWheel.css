@@ -30,13 +30,13 @@
   border-right-color: 120px solid orange; */
 }
 
-.wheelBtn {
+.wheel-btn {
   margin: 20px -50px;
   z-index: 1;
   width: 100px
 }
 
-.dark, .switch, .cirle, .wheelBtn {
+.dark, .switch, .cirle, .wheel-btn {
   position: absolute;
 } 
 

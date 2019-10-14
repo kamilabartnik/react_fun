@@ -9,20 +9,20 @@ class Charts extends Component {
 
   render() {
     return (
-      <div className="chartApp">
+      <div className="chart-app">
         <h1 className="info">Charts generated using Apexcharts</h1>
         <div className="row">
-          <div className="donutGraph">
+          <div className="donut-graph">
             <Donut />
           </div>
-          <div className="myChart">
+          <div className="my-chart">
             <MyChart />
           </div>
 
-          <div className="barGraph">
+          <div className="bar-graph">
             <BarGraphChart />
           </div>
-          <div className="lineGraph">
+          <div className="line-graph">
             <LineChart />
           </div>
 

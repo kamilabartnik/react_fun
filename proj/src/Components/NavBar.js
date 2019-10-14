@@ -16,9 +16,9 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div className="MenuBlock">
+      <div className="menu-block">
         {menusNav.map((menu, index) => {
-        return <div  key={index} className="Nav">
+        return <div  key={index} className="nav">
                 <MenuDrop {...menu} />
               </div> })}
       </div>

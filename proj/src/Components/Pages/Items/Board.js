@@ -69,7 +69,7 @@ class Board extends Component {
         <div className="board-row">
           {this.renderSquare(6)}{this.renderSquare(7)}{this.renderSquare(8)}
         </div>
-        <button className="tttButton" onClick={this.handleReset}>Reset Game</button>
+        <button className="ttt-button" onClick={this.handleReset}>Reset Game</button>
       </div>
     );
   }

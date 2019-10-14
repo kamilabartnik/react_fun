@@ -45,14 +45,14 @@ class App extends Component {
   render() {
     return (
 
-      <div className={this.state.dark ? 'Dark' : 'Light'}>
+      <div className={this.state.dark ? 'dark' : 'light'}>
 
-        <div className="App">
-          <div className="MenuBar">
+        <div className="app">
+          <div className="menu-bar">
 
             <NavBar />
           </div>
-          <div className="Pages">
+          <div className="pages">
             <HashRouter basename="/">
               <div>
                 <Route exact path='/' component={Name} />

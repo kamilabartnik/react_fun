@@ -50,7 +50,7 @@ class MenuDrop extends React.Component {
               : this.props.menu === "menuGames" ? this.menus = menuGames
               : this.props.menu === "menuCSS" ? this.menus = menuCSS
               : this.menus = menuApi 
-              :null
+              : null
               )
     };
 
@@ -78,7 +78,7 @@ class MenuDrop extends React.Component {
     return (
       <div className="dropdown" >
         <div>
-        <div className="buttonDrop" onClick={this.showDropdownMenu}> {this.props.title} </div>
+        <div className="button-drop" onClick={this.showDropdownMenu}> {this.props.title} </div>
         <ul>
         
         {this.state.displayMenu ? this.state.menus.map((menu, index) => {

@@ -35,17 +35,17 @@ class StonePS extends Component {
 
   render() {
     return (
-      <div className="stoneDiv">
+      <div className="stone-div">
         <div className="choose">
           <div className="img">
               <img onClick={() => this.game(0)} src={paper} alt="Paper" />
               <img onClick={() => this.game(1)} src={scissors} alt="Scissors" />
               <img onClick={() => this.game(2)} src={stone} alt="Stone" />
           </div>
-          <div className="gameInfo">
+          <div className="game-info">
             <div className="oponent"> Oponent played: {this.state.value} </div>
             <div className="result">Result: {this.state.text} </div>
-            <div className="sumResults">
+            <div className="sum-results">
               <div className="win">You win {this.state.plWin} times </div>
               <div className="lost">Program wins {this.state.plLoos} times</div>
             </div>

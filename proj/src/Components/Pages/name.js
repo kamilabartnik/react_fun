@@ -25,7 +25,7 @@ class Name extends Component{
       <div className="name">
 
         <label>
-          <input id="inputName" type="text" value={this.state.value} onChange={this.handleChange} onClick={this.handleClick} />
+          <input id="input-name" type="text" value={this.state.value} onChange={this.handleChange} onClick={this.handleClick} />
         </label>
         <br />
         <span id="hello">Hello {this.state.value}</span>
