@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import * as React from 'react';
+import { Component } from 'react';
 import '../../css/Pages/calc.css';
 import CalcButton from './Items/CalcButton'
 

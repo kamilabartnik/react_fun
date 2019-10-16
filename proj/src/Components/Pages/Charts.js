@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import * as React from 'react';
+import { Component } from 'react';
 import Donut from './Items/Donut';
 import LineChart from './Items/LineChart';
 import BarGraphChart from './Items/BarGraphChart';

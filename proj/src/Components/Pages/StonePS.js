@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import * as React from 'react';
+import { Component } from 'react';
 import paper from '../../assets/img/paper.jpg';
 import scissors from '../../assets/img/scissors.jpg';
 import stone from '../../assets/img/stone.jpg';
