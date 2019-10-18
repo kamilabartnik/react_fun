@@ -1,41 +1,45 @@
 import * as React from 'react';
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
 import DialogItem from './Items/DialogItem';
 
 
-class Dialog extends Component{
-  constructor(props) {
-    super(props);
+const Dialog = () => {
+  const [value, handleChange] = useState(0);
+  const [pass, handleClick] = useState(0);
+  const [current, handleCrement] = useState(0);
 
-    this.state = {
-      input: null,
-      forwardValue: null
-    }
+  useEffect(() => pass = current);
 
-    this.handleClick = this.handleClick.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ input: event.target.value });
-  }
-
-  handleClick() {
-    this.setState({ forwardValue: this.state.input });
-  }
-
-  render() {
-    return(
-      <div>
-        <h2>Proste przekazywanie danych rodzic - dziecko<br /> i manipulacja liczbą z poziomu dziecka</h2>
-        <input onChange={this.handleChange} type="number"/> <br />
-        <button onClick={this.handleClick}>Propagate to child</button>
-        <p>
-        {this.state.forwardValue && <DialogItem value={this.state.forwardValue} />}
-        </p>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <h2>Proste przekazywanie danych rodzic - dziecko<br /> i manipulacja liczbą z poziomu dziecka</h2>
+      <input onChange={() => handleChange(pass)} type="number" /> <br />
+      <button onClick={() => handleClick()}>Propagate to child</button>
+      <p>
+        <DialogItem value={current} />
+      </p>
+    </div>
+  )
 }
 
 export default Dialog;
+
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     input: null,
+  //     forwardValue: null
+  //   }
+
+  //   this.handleClick = this.handleClick.bind(this);
+  //   this.handleChange = this.handleChange.bind(this);
+  // }
+
+  // handleChange(event) {
+  //   this.setState({ input: event.target.value });
+  // }
+
+  // handleClick() {
+  //   this.setState({ forwardValue: this.state.input });
+  // }

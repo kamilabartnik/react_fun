@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Component } from 'react';
 
 function Square(props) {
     return (
