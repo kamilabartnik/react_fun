@@ -6,17 +6,16 @@ import DialogItem from './Items/DialogItem';
 const Dialog = () => {
   const [value, handleChange] = useState(0);
   const [pass, handleClick] = useState(0);
-  const [current, handleCrement] = useState(0);
 
-  useEffect(() => pass = current);
+  // useEffect(() => pass = current);
 
   return (
     <div>
       <h2>Proste przekazywanie danych rodzic - dziecko<br /> i manipulacja liczbą z poziomu dziecka</h2>
-      <input onChange={() => handleChange(pass)} type="number" /> <br />
+      <input onChange={(event) => handleChange(value = event.target.value)} type="number" /> <br />
       <button onClick={() => handleClick()}>Propagate to child</button>
       <p>
-        <DialogItem value={current} />
+        <DialogItem value={pass} />
       </p>
     </div>
   )
