@@ -12,6 +12,7 @@ import Dialog from './Pages/Dialog';
 import Biggest from './Pages/Biggest';
 import Timer from './Pages/Timer';
 import RickAndMorthy from './Pages/RickAndMorthyCharactersCards';
+// eslint-disable-next-line
 import StarWars from './Pages/StarWars';
 import ToDoList from './Pages/ToDoList';
 import Calc from './Pages/Calc';
