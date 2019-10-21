@@ -13,9 +13,9 @@ const Dialog = () => {
       <h2>Proste przekazywanie danych rodzic - dziecko<br /> i manipulacja liczbą z poziomu dziecka</h2>
       <input onChange={(event) => handleChange(value = event.target.value)} type="number" /> <br />
       <button onClick={() => handleClick(pass = value)}>Propagate to child</button>
-      <p>
+      <div>
         <DialogItem value={pass} />
-      </p>
+      </div>
     </div>
   )
 }

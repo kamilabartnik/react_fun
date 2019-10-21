@@ -1,46 +1,37 @@
 import * as React from 'react';
-import { Component } from 'react';
 import '../../css/Pages/search.css';
 import UsersList from './Items/UserList';
 
 
 const allUsers = ['Michal', 'Kasia', 'Jacek', 'Marta', 'Tomek', 'Ania'];
 
-class Search extends Component {
-  constructor() {
-    super();
+function Search() {
+  const [filteredUsers, setUsers] = React.useState(allUsers);
 
-    this.state = {
-      filteredUsers: allUsers
-    };
-    this.filterUsers = this.filterUsers.bind(this)
+  function filterUsers(e) {
+    const text = e.currentTarget.value.toLowerCase();
+    const filteredUsers = getFilteredUsersForText(text);
+    setUsers(filteredUsers);
   }
 
-  filterUsers(e) {
-    const text = e.currentTarget.value;
-    const filteredUsers = this.getFilteredUsersForText(text)
-    this.setState({
-      filteredUsers
-    })
+  function getFilteredUsersForText(text) {
+    return allUsers.filter(user => user.toLowerCase().includes(text))
   }
 
-  getFilteredUsersForText(text) {
-    return allUsers.filter(user => user.toLowerCase().includes(text.toLowerCase()))
-  }
 
-  render() {
-    return (
-      <div className="search">
-        <h2>Przy wpisywaniu znaków do inputa<br /> zostają jedynie posiadające te znaki imiona</h2>
-        <div>
-          <input onInput={this.filterUsers} />
-        </div>
-        <div className="search-user">
-          <UsersList users={this.state.filteredUsers} />
-        </div>
+  return (
+    <div className="search">
+      <h2>Przy wpisywaniu znaków do inputa<br /> zostają jedynie posiadające te znaki imiona</h2>
+      <div>
+        <input onInput={filterUsers} />
+
       </div>
-    )
-  }
+      <div className="search-user">
+        <UsersList users={filteredUsers} />
+      </div>
+    </div>
+  )
+
 }
 
 export default Search;
