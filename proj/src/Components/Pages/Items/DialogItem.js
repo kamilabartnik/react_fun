@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 const DialogItem = (props) => {
 
-  let [current, handleCrement] = useState(0);
+  const [current, handleCrement] = useState(props.value);
 
-  current = props.value;
+  // current = props.value;
 
   return (
     <div>
