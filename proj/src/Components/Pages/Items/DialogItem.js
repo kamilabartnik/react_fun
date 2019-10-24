@@ -3,11 +3,7 @@ import { useState, useEffect } from 'react';
 
 const DialogItem = (props) => {
 
-  let [current, handleCrement] = useState(0);
-
-  useEffect(() => {
-    current = Number(props.value);
-  });
+  let [current, handleCrement] = useState(Number(props.value));
 
   return (
     <div>

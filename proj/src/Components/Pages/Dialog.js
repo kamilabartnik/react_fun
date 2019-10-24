@@ -14,7 +14,7 @@ const Dialog = () => {
       <input onChange={(event) => handleChange(value = event.target.value)} type="number" /> <br />
       <button onClick={() => handleClick(pass = value)}>Propagate to child</button>
       <div>
-        <DialogItem value={pass} />
+        {pass ? <DialogItem value={pass} /> :null}
       </div>
     </div>
   )
