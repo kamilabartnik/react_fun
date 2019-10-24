@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+html {
+  text-align: center;
+  background:  rgb(16, 37, 17);
+  margin: auto;
+}
+
+body {
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+
+.dark {
+  background:  rgb(16, 37, 17);
+  /* text-align: center;
+  width: 100vw;
+  min-height: 100vh; */
+}
+
+.light {
+  background:  rgb(231, 240, 231);
+}
+
+.app {
+  font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
+  width: 100vw;
+  max-width: 900px;
+  color: #4CAF50;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pages {
+  margin-top: 50px;
+  min-height: 70vh;
+}
+
+button {
+  font-family: 'Special Elite';
+  font-size: 19px;
+  padding-top: 5px;
+  background-color: rgba(247, 255, 250, 0.808);
+  -webkit-transition-duration: 0.4s;/*Safari*/
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  border-color: #4CAF50;
+  color: #4CAF50;
+  letter-spacing: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.082), 0 3px 10px 0 rgba(0, 0, 0, 0.062);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+div.darkness {
+  position: fixed;
+  right:    15px;
+  bottom:   2px;
+}
+
+input {
+  margin: 10px;
+  height: 25px;
+  border: none;
+  font-size:20px;
+  font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

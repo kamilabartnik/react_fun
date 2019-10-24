@@ -75,7 +75,6 @@ class MenuDrop extends React.Component {
   render() {
     return (
       <div className="dropdown" >
-        <div>
         <div className="button-drop" onClick={this.showDropdownMenu}> {this.props.title} </div>
         <ul>
         
@@ -85,7 +84,6 @@ class MenuDrop extends React.Component {
         :null
         }
       </ul>
-      </div>
       </div>
 
     );

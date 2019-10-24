@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import '../css/NavBar.css';
+import '../css/NavBar.scss';
 import MenuDrop from './MenuDrop';
 
 const menusNav = [

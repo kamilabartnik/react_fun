@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 
 //CSS
-import './css/App.css';
+import './css/App.scss';
 
 //Menu
 import NavBar from './Components/NavBar';
