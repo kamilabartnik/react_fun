@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react';
 import BiggestItem from './Items/BiggestItem';
-import '../../css/Pages/biggest.css'
+import '../../css/Pages/biggest.scss'
 
 class Biggest extends Component {
   constructor(props) {

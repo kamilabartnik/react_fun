@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react';
 import Board from './Items/Board';
-import '../../css/Pages/TicTacToe.css'
+import '../../css/Pages/TicTacToe.scss'
 
 class TicTacToe extends Component {
 

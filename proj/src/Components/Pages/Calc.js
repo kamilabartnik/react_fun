@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import '../../css/Pages/calc.css';
+import '../../css/Pages/calc.scss';
 import CalcButton from './Items/CalcButton'
 
 

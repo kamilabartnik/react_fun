@@ -4,7 +4,7 @@ import Donut from './Items/Donut';
 import LineChart from './Items/LineChart';
 import BarGraphChart from './Items/BarGraphChart';
 import MyChart from './Items/MyChart';
-import '../../css/Pages/Charts.css';
+import '../../css/Pages/Charts.scss';
 
 class Charts extends Component {
 

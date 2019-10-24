@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import '../../css/Pages/ColorWheel.css';
+import '../../css/Pages/ColorWheel.scss';
 
 
 class ColorWheel extends Component {

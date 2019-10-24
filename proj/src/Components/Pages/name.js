@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import '../../css/Pages/hello.css'
+import '../../css/Pages/hello.scss'
 
 
 class Name extends Component{

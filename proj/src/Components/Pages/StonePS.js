@@ -3,7 +3,7 @@ import { Component } from 'react';
 import paper from '../../assets/img/paper.jpg';
 import scissors from '../../assets/img/scissors.jpg';
 import stone from '../../assets/img/stone.jpg';
-import '../../css/Pages/stonePS.css'
+import '../../css/Pages/stonePS.scss'
 
 const gesture = ["Paper", "Scissors", "Stone"]
 let random;

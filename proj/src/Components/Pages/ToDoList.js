@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react';
 import ToDoListItem from './Items/ToDoListItems';
-import '../../css/Pages/toDoList.css';
+import '../../css/Pages/toDoList.scss';
 
 
 class ToDoList extends Component{

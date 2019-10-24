@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../css/Pages/search.css';
+import '../../css/Pages/search.scss';
 import UsersList from './Items/UserList';
 
 
