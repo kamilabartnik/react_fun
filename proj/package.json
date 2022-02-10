@@ -11,7 +11,7 @@
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "mdbreact": "^4.20.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "rc-menu": "^7.4.28",
     "react": "^16.9.0",
